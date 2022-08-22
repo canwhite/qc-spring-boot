@@ -103,3 +103,54 @@
 2022-08-22 18:03:05.665  INFO 34324 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2022-08-22 18:03:05.670  INFO 34324 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-08-22 18:03:05.673  INFO 34324 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 21:12:31.518  INFO 60921 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 60921 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-08-22 21:12:31.519  INFO 60921 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-22 21:12:31.533  INFO 60921 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 21:12:31.533  INFO 60921 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 21:12:31.889  INFO 60921 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 21:12:31.893  INFO 60921 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 21:12:31.893  INFO 60921 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-22 21:12:31.915  INFO 60921 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 21:12:31.915  INFO 60921 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 382 ms
+2022-08-22 21:12:31.956  WARN 60921 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-22 21:12:31.956  INFO 60921 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 21:12:32.052  INFO 60921 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-08-22 21:12:32.052  INFO 60921 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-08-22 21:12:32.054  INFO 60921 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-08-22 21:12:32.055  INFO 60921 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-08-22 21:12:32.057  INFO 60921 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-22 21:12:32.058  INFO 60921 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 21:12:32.111  INFO 60921 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-22 21:12:32.190  INFO 60921 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 21:12:32.210  INFO 60921 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 21:12:32.215  INFO 60921 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.838 seconds (JVM running for 6.194)
+2022-08-22 21:12:38.019  INFO 60921 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-22 21:12:38.020  INFO 60921 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 21:12:38.023  INFO 60921 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-22 21:21:10.423  INFO 61008 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 61008 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-08-22 21:21:10.424  INFO 61008 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-22 21:21:10.440  INFO 61008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-22 21:21:10.441  INFO 61008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-22 21:21:10.789  INFO 61008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 21:21:10.793  INFO 61008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 21:21:10.793  INFO 61008 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-22 21:21:10.812  INFO 61008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 21:21:10.813  INFO 61008 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 372 ms
+2022-08-22 21:21:10.845  WARN 61008 --- [restartedMain] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-08-22 21:21:10.846  INFO 61008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-22 21:21:10.937  INFO 61008 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-08-22 21:21:10.937  INFO 61008 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-08-22 21:21:10.939  INFO 61008 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-08-22 21:21:10.940  INFO 61008 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-08-22 21:21:10.942  INFO 61008 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-22 21:21:10.943  INFO 61008 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-22 21:21:10.993  INFO 61008 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-22 21:21:11.076  INFO 61008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-22 21:21:11.101  INFO 61008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 21:21:11.107  INFO 61008 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.846 seconds (JVM running for 6.199)
+2022-08-22 21:21:27.365  INFO 61008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 21:21:27.365  INFO 61008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 21:21:27.370  INFO 61008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-08-22 21:22:17.403  INFO 61008 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-22 21:22:17.403  INFO 61008 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-22 21:22:17.404  INFO 61008 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
