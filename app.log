@@ -1,0 +1,28 @@
+2022-08-22 15:15:23.166  INFO 31588 --- [main] com.qc.boot.Application                  : Starting Application on lijinhua.local with PID 31588 (/Users/mac/Desktop/qc-spring-boot/target/classes started by mac in /Users/mac/Desktop/qc-spring-boot)
+2022-08-22 15:15:23.168  INFO 31588 --- [main] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-22 15:15:23.871  INFO 31588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 15:15:23.884  INFO 31588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 15:15:23.884  INFO 31588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-22 15:15:23.945  INFO 31588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 15:15:23.945  INFO 31588 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 751 ms
+2022-08-22 15:15:24.144  INFO 31588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-22 15:15:24.377  INFO 31588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 15:15:24.390  INFO 31588 --- [main] com.qc.boot.Application                  : Started Application in 1.578 seconds (JVM running for 7.159)
+2022-08-22 15:15:48.626  INFO 31588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 15:15:48.627  INFO 31588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 15:15:48.637  INFO 31588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-08-22 15:15:56.527  INFO 31588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-22 15:18:45.526  INFO 32079 --- [main] com.qc.boot.Application                  : Starting Application on lijinhua.local with PID 32079 (/Users/mac/Desktop/qc-spring-boot/target/classes started by mac in /Users/mac/Desktop/qc-spring-boot)
+2022-08-22 15:18:45.528  INFO 32079 --- [main] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-22 15:18:46.175  INFO 32079 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-22 15:18:46.183  INFO 32079 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-22 15:18:46.183  INFO 32079 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-22 15:18:46.234  INFO 32079 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-22 15:18:46.234  INFO 32079 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 683 ms
+2022-08-22 15:18:46.424  INFO 32079 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-22 15:18:46.597  INFO 32079 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-22 15:18:46.606  INFO 32079 --- [main] com.qc.boot.Application                  : Started Application in 1.378 seconds (JVM running for 6.963)
+2022-08-22 15:19:02.021  INFO 32079 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-22 15:19:02.022  INFO 32079 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-22 15:19:02.030  INFO 32079 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-08-22 15:19:39.447  INFO 32079 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
