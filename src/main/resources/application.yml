@@ -34,6 +34,10 @@ management:
         include : info,health
 #        include: info, health, beans, env, metrics
 
+storage:
+  type: ${STORAGE_TYPE:local}
+
+
 ---
 spring:
   profiles: test

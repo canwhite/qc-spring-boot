@@ -4,6 +4,7 @@ import com.qc.boot.service.StorageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
@@ -15,12 +16,12 @@ import java.io.InputStream;
  * 功能描述: cloud
  *
  * @author lijinhua
- * @date 2022/8/24 09:01
  */
 @Component
-@Profile("!default")
-public class CloudStorageService implements StorageService {
-
+//@Profile("!default")
+//设定为aws时，启用AwsStorageService：
+@ConditionalOnProperty(value = "storage.type", havingValue = "aws")
+public class AwsStorageService implements StorageService {
 
     @Value("${storage.cloud.bucket:}")
     String bucket;

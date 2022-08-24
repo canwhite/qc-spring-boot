@@ -4,6 +4,8 @@ import com.qc.boot.service.StorageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
@@ -25,7 +27,19 @@ import java.util.UUID;
  * @date 2022/8/24 08:45
  */
 @Component
-@Profile("default")
+//@Profile("default")
+/**
+ * 上边profile局限性太大，不能太精细化的分工，但是boot有条件装配呀，小汽车就是小汽车
+@ConditionalOnProperty：如果有指定的配置，条件生效；
+@ConditionalOnBean：如果有指定的Bean，条件生效；
+@ConditionalOnMissingBean：如果没有指定的Bean，条件生效；
+@ConditionalOnMissingClass：如果没有指定的Class，条件生效；
+@ConditionalOnWebApplication：在Web环境中条件生效；
+@ConditionalOnExpression：根据表达式判断条件是否生效。
+*/
+
+//设定为local时，启用LocalStorageService：
+@ConditionalOnProperty(value = "storage.type",havingValue = "local",matchIfMissing = true)
 public class LocalStorageService implements StorageService {
     @Value("${storage.local:/var/static}")
     String localStorageRootDir;
