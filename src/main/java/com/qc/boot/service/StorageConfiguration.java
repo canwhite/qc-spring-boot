@@ -14,6 +14,7 @@ import java.util.List;
 
 
 @Configuration
+//注意大批量的拿属性值，这里用的是properties
 @ConfigurationProperties("storage.local")
 /** Spring Boot中配置可以写成Bean，这样可以由编译器检查类型，无需编写重复的@Value注解*/
 public class StorageConfiguration {
