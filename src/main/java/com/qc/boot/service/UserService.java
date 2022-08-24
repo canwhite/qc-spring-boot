@@ -12,6 +12,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.PostConstruct;
 import java.sql.Statement;
 
 /**
@@ -30,11 +31,34 @@ public class UserService {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
+    /** 引入统一配置文件 */
+    @Autowired
+    StorageConfiguration storageConfig;
+
+
 
     /** ORM把关系型的表数据映射为java对象
      * 参数是要映射成的Entity
      * */
     RowMapper<User> userRowMapper = new BeanPropertyRowMapper<>(User.class);
+
+
+    //然后我们在这里加一个初始化方法
+    @PostConstruct
+    public  void  init(){
+        logger.info("Load configuration: root-dir = {}", storageConfig.getRootDir());
+        logger.info("Load configuration: max-size = {}", storageConfig.getMaxSize());
+        logger.info("Load configuration: allowed-types = {}", storageConfig.getAllowTypes());
+        /**
+         * 启动之后我们能看到输出
+         * 2022-08-24 11:02:36.808  INFO 47514 --- [  restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+         * 2022-08-24 11:02:36.808  INFO 47514 --- [  restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+         * 2022-08-24 11:02:36.808  INFO 47514 --- [  restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+         * */
+    }
+
+
+
 
 
     /** 查  */

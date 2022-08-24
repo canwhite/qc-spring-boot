@@ -36,7 +36,14 @@ management:
 
 storage:
   type: ${STORAGE_TYPE:local}
-
+  local:
+    root-dir: ${STORAGE_LOCAL_ROOT:/var/storage}
+    # max file size defaults to 100K:
+    max-size: ${STORAGE_LOCAL_MAX_SIZE:102400}
+    # allow empty file?
+    allow-empty: false
+    # allow types:
+    allow-types: jpg, png, gif
 
 ---
 spring:
