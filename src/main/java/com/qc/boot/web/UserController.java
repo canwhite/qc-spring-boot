@@ -1,5 +1,6 @@
 package com.qc.boot.web;
 
+import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
 import com.qc.boot.service.StorageService;
 import com.qc.boot.service.UserService;
@@ -25,7 +26,6 @@ import java.util.Map;
  * @date 2022/8/22 15:12
  */
 @Controller
-@Transactional
 public class UserController {
 
     public static final String KEY_USER = "__user__";
@@ -34,10 +34,6 @@ public class UserController {
 
     @Autowired
     UserService userService;
-
-    @Autowired
-    StorageService storageService;
-
 
     @ExceptionHandler(RuntimeException.class)
     public ModelAndView handleUnknowException(Exception ex) {
@@ -93,11 +89,14 @@ public class UserController {
     }
 
     @GetMapping("/profile")
+    @RoutingWithSlave
     public ModelAndView profile(HttpSession session) {
         User user = (User) session.getAttribute(KEY_USER);
         if (user == null) {
             return new ModelAndView("redirect:/signin");
         }
+        // 测试是否走slave数据库:
+        user = userService.getUserByEmail(user.getEmail());
         return new ModelAndView("profile.html", Map.of("user", user));
     }
 

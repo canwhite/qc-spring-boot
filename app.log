@@ -377,3 +377,98 @@
 2022-08-24 17:45:23.908  INFO 52327 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
 2022-08-24 17:45:23.909  INFO 52327 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-08-24 17:45:23.916  INFO 52327 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-24 21:39:24.742  INFO 62168 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 62168 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-08-24 21:39:24.743  INFO 62168 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-24 21:39:24.763  INFO 62168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-24 21:39:24.763  INFO 62168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-24 21:39:25.349  INFO 62168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-24 21:39:25.353  INFO 62168 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 21:39:25.353  INFO 62168 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-24 21:39:25.387  INFO 62168 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 21:39:25.387  INFO 62168 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 624 ms
+2022-08-24 21:39:25.491  INFO 62168 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-08-24 21:39:25.492  INFO 62168 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-24 21:39:25.594  INFO 62168 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-08-24 21:39:25.595  INFO 62168 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-08-24 21:39:25.598  INFO 62168 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-08-24 21:39:25.600  INFO 62168 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-08-24 21:39:25.602  INFO 62168 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-24 21:39:25.603  INFO 62168 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-24 21:39:25.611  INFO 62168 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-08-24 21:39:25.611  INFO 62168 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-08-24 21:39:25.611  INFO 62168 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-08-24 21:39:25.619  INFO 62168 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-08-24 21:39:25.683  INFO 62168 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-24 21:39:25.854  INFO 62168 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:39:25.854  INFO 62168 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:39:25.874  INFO 62168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-24 21:39:25.876  INFO 62168 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-24 21:39:25.908  INFO 62168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-24 21:39:25.916  INFO 62168 --- [restartedMain] com.qc.boot.Application                  : Started Application in 1.396 seconds (JVM running for 6.756)
+2022-08-24 21:39:26.284  INFO 62168 --- [RMI TCP Connection(2)-192.168.31.61] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-24 21:39:26.286  INFO 62168 --- [RMI TCP Connection(2)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-24 21:39:26.293  INFO 62168 --- [RMI TCP Connection(1)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-08-24 21:39:26.296  INFO 62168 --- [RMI TCP Connection(1)-192.168.31.61] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-24 21:39:26.296  INFO 62168 --- [RMI TCP Connection(1)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-08-24 21:39:26.299  INFO 62168 --- [RMI TCP Connection(2)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-08-24 21:40:11.845  INFO 62168 --- [http-nio-8080-exec-7] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:40:11.853  INFO 62168 --- [http-nio-8080-exec-7] com.qc.boot.service.UserService          : try login by 752716886@qq.com...
+2022-08-24 21:40:36.142  INFO 62168 --- [http-nio-8080-exec-2] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:40:36.144  INFO 62168 --- [http-nio-8080-exec-2] com.qc.boot.service.UserService          : try register by 752716886@qq.com...
+2022-08-24 21:40:36.154  INFO 62168 --- [http-nio-8080-exec-2] com.qc.boot.web.UserController           : user registered: 752716886@qq.com
+2022-08-24 21:40:46.438  INFO 62168 --- [http-nio-8080-exec-7] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:40:46.439  INFO 62168 --- [http-nio-8080-exec-7] com.qc.boot.service.UserService          : try login by 752716886@qq.com...
+2022-08-24 21:40:46.455  INFO 62168 --- [http-nio-8080-exec-9] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-2)
+2022-08-24 21:41:26.021  INFO 62168 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-24 21:41:26.022  INFO 62168 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-08-24 21:41:26.024  INFO 62168 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-08-24 21:41:26.024  INFO 62168 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-24 21:41:26.025  INFO 62168 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-24 21:41:35.374  INFO 62203 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 62203 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-08-24 21:41:35.375  INFO 62203 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-24 21:41:35.390  INFO 62203 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-24 21:41:35.390  INFO 62203 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-24 21:41:35.862  INFO 62203 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-24 21:41:35.866  INFO 62203 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-24 21:41:35.866  INFO 62203 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-24 21:41:35.888  INFO 62203 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-24 21:41:35.888  INFO 62203 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 498 ms
+2022-08-24 21:41:35.969  INFO 62203 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-08-24 21:41:35.969  INFO 62203 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-24 21:41:36.054  INFO 62203 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-08-24 21:41:36.054  INFO 62203 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-08-24 21:41:36.056  INFO 62203 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-08-24 21:41:36.057  INFO 62203 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-08-24 21:41:36.059  INFO 62203 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-24 21:41:36.060  INFO 62203 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-24 21:41:36.067  INFO 62203 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-08-24 21:41:36.068  INFO 62203 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-08-24 21:41:36.068  INFO 62203 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-08-24 21:41:36.075  INFO 62203 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-08-24 21:41:36.135  INFO 62203 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-24 21:41:36.274  INFO 62203 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:41:36.274  INFO 62203 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:41:36.292  INFO 62203 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-24 21:41:36.294  INFO 62203 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-24 21:41:36.322  INFO 62203 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-24 21:41:36.330  INFO 62203 --- [restartedMain] com.qc.boot.Application                  : Started Application in 1.093 seconds (JVM running for 6.433)
+2022-08-24 21:41:36.788  INFO 62203 --- [RMI TCP Connection(1)-192.168.31.61] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-24 21:41:36.790  INFO 62203 --- [RMI TCP Connection(1)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-24 21:41:36.791  INFO 62203 --- [RMI TCP Connection(2)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-08-24 21:41:36.792  INFO 62203 --- [RMI TCP Connection(2)-192.168.31.61] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-24 21:41:36.792  INFO 62203 --- [RMI TCP Connection(2)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-08-24 21:41:36.795  INFO 62203 --- [RMI TCP Connection(1)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-08-24 21:42:19.018  INFO 62203 --- [http-nio-8080-exec-5] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:42:19.025  INFO 62203 --- [http-nio-8080-exec-5] com.qc.boot.service.UserService          : try login by 752716886@qq.com...
+2022-08-24 21:42:19.054  INFO 62203 --- [http-nio-8080-exec-6] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-2)
+2022-08-24 21:45:15.527  INFO 62203 --- [http-nio-8080-exec-1] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-2)
+2022-08-24 21:45:18.379  INFO 62203 --- [http-nio-8080-exec-4] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-2)
+2022-08-24 21:45:20.768  INFO 62203 --- [http-nio-8080-exec-5] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-2)
+2022-08-24 21:46:25.695  INFO 62203 --- [http-nio-8080-exec-9] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-24 21:46:25.698  INFO 62203 --- [http-nio-8080-exec-9] com.qc.boot.service.UserService          : try login by 752716886@qq.com...
+2022-08-24 21:46:25.715  INFO 62203 --- [http-nio-8080-exec-1] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-2)
+2022-08-24 21:51:43.391  INFO 62203 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-24 21:51:43.391  INFO 62203 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-08-24 21:51:43.393  INFO 62203 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-08-24 21:51:43.393  INFO 62203 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-24 21:51:43.394  INFO 62203 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
