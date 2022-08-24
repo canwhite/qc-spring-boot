@@ -1,6 +1,7 @@
 package com.qc.boot.web;
 
 import com.qc.boot.entity.User;
+import com.qc.boot.service.StorageService;
 import com.qc.boot.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,6 +32,10 @@ public class UserController {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    StorageService storageService;
+
 
     @ExceptionHandler(RuntimeException.class)
     public ModelAndView handleUnknowException(Exception ex) {
