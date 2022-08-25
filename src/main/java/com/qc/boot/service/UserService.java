@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
 import java.sql.Statement;
+import java.util.List;
 
 /**
  * 功能描述: user service
@@ -69,6 +70,12 @@ public class UserService {
     public User getUserByEmail(String email){
         return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",new Object[] {email},userRowMapper);
     }
+
+    //获取所有users
+    public List<User> getUesrs(){
+        return  jdbcTemplate.query("SELECT * FROM users",userRowMapper);
+    }
+
 
     public User signin(String email,String password){
         logger.info("try login by {}...", email);

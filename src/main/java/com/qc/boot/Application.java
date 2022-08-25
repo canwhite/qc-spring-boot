@@ -3,6 +3,7 @@ package com.qc.boot;
 import com.qc.boot.config.MasterDataSourceConfiguration;
 import com.qc.boot.config.RoutingDataSourceConfiguration;
 import com.qc.boot.config.SlaveDataSourceConfiguration;
+import com.qc.boot.interceptor.BlacklistInterceptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,10 +46,10 @@ public class Application implements WebMvcConfigurer{
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
     }
 
-    /**
      @Override
      public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new SecurityInterceptor()).addPathPatterns("/**");
+        /**添加interceptor */
+        registry.addInterceptor(new BlacklistInterceptor()).addPathPatterns("/api/*");
      }
-     */
+
 }
