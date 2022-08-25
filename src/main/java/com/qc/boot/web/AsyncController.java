@@ -2,6 +2,7 @@ package com.qc.boot.web;
 
 import com.qc.boot.entity.User;
 import com.qc.boot.service.UserService;
+import com.qc.boot.utils.HttpUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,22 @@ public class AsyncController {
                  * Student student2 = mapper.readValue(Json, Student.class);
                  *
                  * */
+
+
+                /**
+                {
+                    "id": "0",
+                        "author": "Alejandro Escamilla",
+                        "width": 5616,
+                        "height": 3744,
+                        "url": "https://unsplash.com/photos/yC-Yzbqy7PY",
+                        "download_url": "https://picsum.photos/id/0/5616/3744"
+                }
+                 */
+                String result = HttpUtils.get("https://picsum.photos/v2/list");
+                logger.info("----------"+result + "--------------");
+
+
                 Thread.sleep(3000);
                 //只要callable返回
                 return userService.getUesrs();
