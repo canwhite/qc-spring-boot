@@ -1,7 +1,9 @@
 package com.qc.boot.web;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
+import com.qc.boot.redis.RedisService;
 import com.qc.boot.service.StorageService;
 import com.qc.boot.service.UserService;
 import org.slf4j.Logger;
@@ -28,12 +30,38 @@ import java.util.Map;
 @Controller
 public class UserController {
 
+    public static final String KEY_USER_ID = "__userid__";
+
     public static final String KEY_USER = "__user__";
 
     final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
     UserService userService;
+
+    //jackson
+    @Autowired
+    ObjectMapper objectMapper;
+
+    @Autowired
+    RedisService redisService;
+
+    private void putUserIntoRedis(User user) throws Exception {
+        redisService.hset(KEY_USER, user.getId().toString(), objectMapper.writeValueAsString(user));
+    }
+
+    private User getUserFromRedis(HttpSession session) throws Exception {
+        Long id = (Long) session.getAttribute(KEY_USER_ID);
+        if (id != null) {
+            String s = redisService.hget(KEY_USER, id.toString());
+            if (s != null) {
+                return objectMapper.readValue(s, User.class);
+            }
+        }
+        return null;
+    }
+
+
 
     @ExceptionHandler(RuntimeException.class)
     public ModelAndView handleUnknowException(Exception ex) {
@@ -70,6 +98,7 @@ public class UserController {
     @GetMapping("/signin")
     public ModelAndView signin(HttpSession session) {
         User user = (User) session.getAttribute(KEY_USER);
+        //加一个redis操作
         if (user != null) {
             return new ModelAndView("redirect:/profile");
         }
