@@ -41,7 +41,11 @@ pebble:
   cache: false
 
 server:
+  #实际监听接口
   port: ${APP_PORT:8080}
+  #如果有反向代理读取客户端的http header，适配easyApi
+  forward-headers-strategy: native
+
 
 management:
   endpoints:

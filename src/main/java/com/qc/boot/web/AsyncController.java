@@ -59,7 +59,7 @@ public class AsyncController {
      */
 
 
-
+    /** 我们只是返回Callable，然后boot帮忙完成的操作就有submit和get两步骤，最终直接返回了json结果 */
     @GetMapping("/images")
     public Callable<List<ImageItem>> images(){
         return  () -> {
