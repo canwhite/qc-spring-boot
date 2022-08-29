@@ -1,5 +1,6 @@
 package com.qc.boot.web;
 
+import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
@@ -51,7 +52,8 @@ public class UserController {
     }
 
     private User getUserFromRedis(HttpSession session) throws Exception {
-        Long id = (Long) session.getAttribute(KEY_USER_ID);
+        //这里变成了取id，而不是取user
+        Long id = (Long) session.getAttribute(KEY_USER_ID);//
         if (id != null) {
             String s = redisService.hget(KEY_USER, id.toString());
             if (s != null) {
@@ -96,8 +98,9 @@ public class UserController {
     }
 
     @GetMapping("/signin")
-    public ModelAndView signin(HttpSession session) {
-        User user = (User) session.getAttribute(KEY_USER);
+    public ModelAndView signin(HttpSession session) throws Exception{
+//        User user = (User) session.getAttribute(KEY_USER);
+        User user = getUserFromRedis(session);
         //加一个redis操作
         if (user != null) {
             return new ModelAndView("redirect:/profile");
@@ -107,10 +110,11 @@ public class UserController {
 
     @PostMapping("/signin")
     public ModelAndView doSignin(@RequestParam("email") String email, @RequestParam("password") String password,
-                                 HttpSession session) {
+                                 HttpSession session) throws Exception{
         try {
             User user = userService.signin(email, password);
-            session.setAttribute(KEY_USER, user);
+            session.setAttribute(KEY_USER_ID, user.getId());
+            putUserIntoRedis(user);
         } catch (RuntimeException e) {
             return new ModelAndView("signin.html", Map.of("email", email, "error", "Signin failed"));
         }
@@ -118,9 +122,10 @@ public class UserController {
     }
 
     @GetMapping("/profile")
-    @RoutingWithSlave
-    public ModelAndView profile(HttpSession session) {
-        User user = (User) session.getAttribute(KEY_USER);
+    //@RoutingWithSlave //切换database
+    public ModelAndView profile(HttpSession session) throws Exception {
+//        User user = (User) session.getAttribute(KEY_USER);
+        User user = getUserFromRedis(session);
         if (user == null) {
             return new ModelAndView("redirect:/signin");
         }
@@ -131,7 +136,7 @@ public class UserController {
 
     @GetMapping("/signout")
     public String signout(HttpSession session) {
-        session.removeAttribute(KEY_USER);
+        session.removeAttribute(KEY_USER_ID);
         return "redirect:/signin";
     }
 
