@@ -50,6 +50,11 @@ spring:
     # 连接用户名和口令由创建Artemis服务器时指定:
     user: admin
     password: 123456
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 pebble:
   suffix:
