@@ -1268,3 +1268,139 @@ com.rabbitmq.client.MalformedFrameException: AMQP protocol version mismatch; we 
 	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:665)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 
+2022-08-30 21:43:44.835  INFO 82380 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 82380 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-08-30 21:43:44.836  INFO 82380 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-30 21:43:44.856  INFO 82380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-30 21:43:44.856  INFO 82380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-30 21:43:45.519  INFO 82380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-30 21:43:45.524  INFO 82380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-30 21:43:45.524  INFO 82380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-30 21:43:45.554  INFO 82380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-30 21:43:45.554  INFO 82380 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 698 ms
+2022-08-30 21:43:45.591  INFO 82380 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-08-30 21:43:45.592  INFO 82380 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-08-30 21:43:45.592  INFO 82380 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-08-30 21:43:45.668  INFO 82380 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-08-30 21:43:45.668  INFO 82380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-30 21:43:45.775  INFO 82380 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-08-30 21:43:45.775  INFO 82380 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-08-30 21:43:45.778  INFO 82380 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-08-30 21:43:45.780  INFO 82380 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-08-30 21:43:45.793  INFO 82380 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-30 21:43:45.794  INFO 82380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-30 21:43:45.999  INFO 82380 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-08-30 21:43:46.071  INFO 82380 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-30 21:43:46.396  INFO 82380 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-30 21:43:46.396  INFO 82380 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-30 21:43:46.413  INFO 82380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-30 21:43:46.415  INFO 82380 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-30 21:43:46.474  INFO 82380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-30 21:43:46.475  INFO 82380 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-08-30 21:43:46.531 ERROR 82380 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+com.rabbitmq.client.MalformedFrameException: AMQP protocol version mismatch; we are version 0-9-1, server sent signature 3,1,0,0
+	at com.rabbitmq.client.impl.Frame.protocolVersionMismatch(Frame.java:170)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:107)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-08-30 21:43:49.476  INFO 82380 --- [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.io.IOException
+2022-08-30 21:43:49.485  INFO 82380 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-08-30 21:43:49.509 ERROR 82380 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+com.rabbitmq.client.MalformedFrameException: AMQP protocol version mismatch; we are version 0-9-1, server sent signature 3,1,0,0
+	at com.rabbitmq.client.impl.Frame.protocolVersionMismatch(Frame.java:170)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:107)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-08-30 21:43:54.517  WARN 82380 --- [AMQP Connection 0:0:0:0:0:0:0:1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Socket closed)
+2022-08-30 21:43:54.518  INFO 82380 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-08-30 21:43:54.527 ERROR 82380 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+com.rabbitmq.client.MalformedFrameException: AMQP protocol version mismatch; we are version 0-9-1, server sent signature 3,1,0,0
+	at com.rabbitmq.client.impl.Frame.protocolVersionMismatch(Frame.java:170)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:107)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-08-30 21:43:59.532  WARN 82380 --- [AMQP Connection 0:0:0:0:0:0:0:1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured (Exception message: Socket closed)
+2022-08-30 21:43:59.532  INFO 82380 --- [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.util.concurrent.TimeoutException
+2022-08-30 21:43:59.533  INFO 82380 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-08-30 21:43:59.544 ERROR 82380 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+com.rabbitmq.client.MalformedFrameException: AMQP protocol version mismatch; we are version 0-9-1, server sent signature 3,1,0,0
+	at com.rabbitmq.client.impl.Frame.protocolVersionMismatch(Frame.java:170)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:107)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-08-30 21:43:59.621  INFO 82380 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@31eed8f4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-30 21:44:51.549  INFO 82555 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 82555 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-08-30 21:44:51.550  INFO 82555 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-08-30 21:44:51.566  INFO 82555 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-30 21:44:51.566  INFO 82555 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-30 21:44:52.128  INFO 82555 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-30 21:44:52.131  INFO 82555 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-30 21:44:52.131  INFO 82555 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-08-30 21:44:52.155  INFO 82555 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-30 21:44:52.155  INFO 82555 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 589 ms
+2022-08-30 21:44:52.186  INFO 82555 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-08-30 21:44:52.186  INFO 82555 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-08-30 21:44:52.186  INFO 82555 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-08-30 21:44:52.250  INFO 82555 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-08-30 21:44:52.250  INFO 82555 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-30 21:44:52.335  INFO 82555 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-08-30 21:44:52.336  INFO 82555 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-08-30 21:44:52.338  INFO 82555 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-08-30 21:44:52.339  INFO 82555 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-08-30 21:44:52.347  INFO 82555 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-30 21:44:52.348  INFO 82555 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-30 21:44:52.516  INFO 82555 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-08-30 21:44:52.584  INFO 82555 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-30 21:44:52.905  INFO 82555 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-30 21:44:52.905  INFO 82555 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-30 21:44:52.921  INFO 82555 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-30 21:44:52.923  INFO 82555 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-08-30 21:44:52.975  INFO 82555 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-30 21:44:52.976  INFO 82555 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2022-08-30 21:44:52.990  INFO 82555 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#65ca47df:0/SimpleConnection@673f5b5b [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61627]
+2022-08-30 21:44:53.013  INFO 82555 --- [restartedMain] com.qc.boot.Application                  : Started Application in 1.617 seconds (JVM running for 6.988)
+2022-08-30 21:44:53.650  INFO 82555 --- [RMI TCP Connection(2)-192.168.31.61] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-30 21:44:53.650  INFO 82555 --- [RMI TCP Connection(2)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-30 21:44:53.653  INFO 82555 --- [RMI TCP Connection(1)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-08-30 21:44:53.653  INFO 82555 --- [RMI TCP Connection(1)-192.168.31.61] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-08-30 21:44:53.653  INFO 82555 --- [RMI TCP Connection(1)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-08-30 21:44:53.655  INFO 82555 --- [RMI TCP Connection(2)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-08-30 21:45:10.206  INFO 82555 --- [http-nio-8080-exec-1] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-30 21:45:10.209  INFO 82555 --- [http-nio-8080-exec-1] com.qc.boot.service.UserService          : try login by 752716886@qq.com...
+2022-08-30 21:45:10.245  INFO 82555 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] com.qc.boot.amqp.QueueMessageListener    : queue q_mail received registration message: [RegistrationMessage: email=752716886@qq.com, name=715705qc, timestamp=1661867110217]
+2022-08-30 21:45:10.245  INFO 82555 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] com.qc.boot.amqp.QueueMessageListener    : queue q_app received message: [LoginMessage: email=752716886@qq.com, name=715705qc, success=true, timestamp=1661867110217]
+2022-08-30 21:45:15.468  INFO 82555 --- [http-nio-8080-exec-2] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-30 21:45:37.244  INFO 82555 --- [http-nio-8080-exec-9] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-08-30 21:45:37.248  INFO 82555 --- [http-nio-8080-exec-9] com.qc.boot.service.UserService          : try login by 752716886@qq.com...
+2022-08-30 21:45:37.270  INFO 82555 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] com.qc.boot.amqp.QueueMessageListener    : queue q_sms received message: [LoginMessage: email=752716886@qq.com, name=(unknown), success=false, timestamp=1661867137253]
+2022-08-30 21:45:56.581  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-08-30 21:45:57.355  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-08-30 21:45:57.356  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-08-30 21:45:57.428  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-08-30 21:45:57.428  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-08-30 21:45:58.415  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-08-30 21:45:58.416  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-08-30 21:45:59.275  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-08-30 21:45:59.275  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-08-30 21:46:00.280  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-08-30 21:46:01.540  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2022-08-30 21:46:01.540  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2022-08-30 21:46:01.540  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2022-08-30 21:46:01.540  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2022-08-30 21:46:01.540  INFO 82555 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2022-08-30 21:46:01.540  INFO 82555 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-08-30 21:46:01.551  INFO 82555 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-08-30 21:46:01.552  INFO 82555 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-08-30 21:46:01.552  INFO 82555 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-30 21:46:01.553  INFO 82555 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

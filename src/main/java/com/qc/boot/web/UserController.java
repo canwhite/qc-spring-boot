@@ -6,8 +6,6 @@ import com.qc.boot.amqp.messaging.LoginMessage;
 import com.qc.boot.amqp.messaging.RegistrationMessage;
 import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
-import com.qc.boot.jms.MailMessage;
-import com.qc.boot.jms.MessagingService;
 import com.qc.boot.redis.RedisService;
 import com.qc.boot.service.StorageService;
 import com.qc.boot.service.UserService;
