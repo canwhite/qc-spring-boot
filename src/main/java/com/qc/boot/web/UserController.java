@@ -48,16 +48,25 @@ public class UserController {
     RedisService redisService;
 
     private void putUserIntoRedis(User user) throws Exception {
-        redisService.hset(KEY_USER, user.getId().toString(), objectMapper.writeValueAsString(user));
+        /** hset 三个参数key，sub-key，value，将user转化为json字符串存起来
+         *  原来是jackson(writeValueAsString)，现在改为fastjson(toJSONString)
+         *  说实在的更喜欢fastjson的语法习惯
+         * */
+        //redisService.hset(KEY_USER, user.getId().toString(), objectMapper.writeValueAsString(user));
+        redisService.hset(KEY_USER,user.getId().toString(),JSON.toJSONString(user));
+
     }
 
     private User getUserFromRedis(HttpSession session) throws Exception {
-        //这里变成了取id，而不是取user
+        /** 换成取id获取，判断session */
         Long id = (Long) session.getAttribute(KEY_USER_ID);//
         if (id != null) {
             String s = redisService.hget(KEY_USER, id.toString());
             if (s != null) {
-                return objectMapper.readValue(s, User.class);
+                /** jackson将字符串转化为对象*/
+                //return objectMapper.readValue(s, User.class);
+                /** 这里换成用fastJson将字符串转化为对象*/
+                return  JSON.parseObject(s,User.class);
             }
         }
         return null;
@@ -99,7 +108,8 @@ public class UserController {
 
     @GetMapping("/signin")
     public ModelAndView signin(HttpSession session) throws Exception{
-//        User user = (User) session.getAttribute(KEY_USER);
+        //User user = (User) session.getAttribute(KEY_USER);
+        /** 改为从redis获取user*/
         User user = getUserFromRedis(session);
         //加一个redis操作
         if (user != null) {
@@ -108,12 +118,18 @@ public class UserController {
         return new ModelAndView("signin.html");
     }
 
+
+    /** signin前端发起的操作发生在这里，然后是路由的控制在上边
+     *  只有这一个地方是set的，其他地方都是get数据用来操作
+     * */
     @PostMapping("/signin")
     public ModelAndView doSignin(@RequestParam("email") String email, @RequestParam("password") String password,
                                  HttpSession session) throws Exception{
         try {
             User user = userService.signin(email, password);
+            /** session，Set改为宏id*/
             session.setAttribute(KEY_USER_ID, user.getId());
+            /** redis set*/
             putUserIntoRedis(user);
         } catch (RuntimeException e) {
             return new ModelAndView("signin.html", Map.of("email", email, "error", "Signin failed"));
@@ -124,7 +140,8 @@ public class UserController {
     @GetMapping("/profile")
     //@RoutingWithSlave //切换database
     public ModelAndView profile(HttpSession session) throws Exception {
-//        User user = (User) session.getAttribute(KEY_USER);
+        //User user = (User) session.getAttribute(KEY_USER);
+        /** 改为从redis获取user */
         User user = getUserFromRedis(session);
         if (user == null) {
             return new ModelAndView("redirect:/signin");

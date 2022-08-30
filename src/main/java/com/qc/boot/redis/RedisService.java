@@ -39,7 +39,6 @@ public class RedisService {
 
     @PostConstruct
     public  void  init(){
-        //todo
         GenericObjectPoolConfig<StatefulRedisConnection<String, String>> poolConfig = new GenericObjectPoolConfig<>();
         poolConfig.setMaxTotal(20);
         poolConfig.setMaxIdle(5);
@@ -47,15 +46,23 @@ public class RedisService {
         poolConfig.setTestWhileIdle(true);
         this.redisConnectionPool = ConnectionPoolSupport.createGenericObjectPool(() -> redisClient.connect(), poolConfig);
     }
-
     @PreDestroy
     public  void  shutdown(){
-        //todo
+        //关闭pool
         this.redisConnectionPool.close();
+        //关闭client
         this.redisClient.shutdown();
     }
 
-    /** 同步执行方法，触发回调*/
+    /** 同步执行方法，触发回调
+     * PS-1:
+     * <T> T
+     * 如果是泛型返回值，如果直接写个T必然是无法识别，需要一个<T>来修饰一下
+     * 这里是从doInConnection继承来的返回值
+     * 具体返回什么会在接口实现的时候定义；
+     * PS-2:
+     * executeSync参数是接口类，可以点语法调用内部接口
+     * */
     public <T> T executeSync(SyncCommandCallback<T> callback) {
         try (StatefulRedisConnection<String, String> connection = redisConnectionPool.borrowObject()) {
             connection.setAutoFlushCommands(true);
@@ -70,10 +77,24 @@ public class RedisService {
     }
 
     public String set(String key, String value) {
-        return executeSync(commands -> commands.set(key, value));
+        //return executeSync(commands -> commands.set(key, value));
+        /** 上边的 return语句可以展开写成这样，在内部确定了返回值，
+         *  这里executeSync等于将doInConnection的返回再返回，继承返回
+         *  并且在内部构建了doInConnection的上下文，执行调用
+         * */
+        return  executeSync(new SyncCommandCallback<String>(){
+            @Override
+            public String doInConnection(RedisCommands<String, String> commands) {
+                return  commands.set(key,value);
+            }
+        });
     }
 
+    /**由此可以看出箭头函数的写法要比上边展开的写法方便很多
+     * commands.setex返回值给到executeSync，Sync再给到外部函数
+     * */
     public String set(String key, String value, Duration timeout) {
+        /** Setex 命令为指定的 key 设置值及其过期时间。如果 key 已经存在， SETEX 命令将会替换旧的值*/
         return executeSync(commands -> commands.setex(key, timeout.toSeconds(), value));
     }
 

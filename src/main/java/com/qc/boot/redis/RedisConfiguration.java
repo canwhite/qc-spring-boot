@@ -19,17 +19,17 @@ import org.springframework.context.annotation.Bean;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-/**
- * @Component和@Bean
- * @Bean主要为三方工具创建bean，而且必须设置在配置类里
- *
- * */
+
 public class RedisConfiguration {
     private String host;
     private int port;
     private String password;
     private int database;
 
+    /**
+     * @Component和@Bean
+     * @Bean主要为三方工具创建bean，而且必须设置在配置类里
+     * */
     @Bean
     RedisClient redisClient() {
         RedisURI uri = RedisURI.Builder.redis(this.host, this.port).withPassword(this.password)
