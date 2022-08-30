@@ -1,9 +1,10 @@
 package com.qc.boot.web;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
+import com.qc.boot.jms.MailMessage;
+import com.qc.boot.jms.MessagingService;
 import com.qc.boot.redis.RedisService;
 import com.qc.boot.service.StorageService;
 import com.qc.boot.service.UserService;
@@ -40,12 +41,12 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    //jackson
-    @Autowired
-    ObjectMapper objectMapper;
-
     @Autowired
     RedisService redisService;
+
+    @Autowired
+    MessagingService messagingService;
+
 
     private void putUserIntoRedis(User user) throws Exception {
         /** hset 三个参数key，sub-key，value，将user转化为json字符串存起来
@@ -71,7 +72,6 @@ public class UserController {
         }
         return null;
     }
-
 
 
     @ExceptionHandler(RuntimeException.class)
@@ -100,8 +100,13 @@ public class UserController {
         try {
             User user = userService.register(email, password, name);
             logger.info("user registered: {}", user.getEmail());
+            messagingService.sendMailMessage(MailMessage.registration(user.getEmail(),user.getName()));
+
+
         } catch (RuntimeException e) {
             return new ModelAndView("register.html", Map.of("email", email, "error", "Register failed"));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return new ModelAndView("redirect:/signin");
     }
