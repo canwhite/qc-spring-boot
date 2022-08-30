@@ -1,9 +1,6 @@
 package com.qc.boot.web;
 
 import com.alibaba.fastjson.JSON;
-import com.qc.boot.amqp.AmqpMessagingService;
-import com.qc.boot.amqp.messaging.LoginMessage;
-import com.qc.boot.amqp.messaging.RegistrationMessage;
 import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
 import com.qc.boot.jms.MailMessage;
@@ -49,13 +46,12 @@ public class UserController {
     RedisService redisService;
 
     /** 注释一下jms */
-    /**
-    @Autowired
-    MessagingService messagingService;
-     */
 
     @Autowired
-    AmqpMessagingService amqpMessagingService;
+    MessagingService messagingService;
+
+
+
 
 
     private void putUserIntoRedis(User user) throws Exception {
@@ -110,8 +106,8 @@ public class UserController {
         try {
             User user = userService.register(email, password, name);
             logger.info("user registered: {}", user.getEmail());
-            //messagingService.sendMailMessage(MailMessage.registration(user.getEmail(),user.getName()));
-            amqpMessagingService.sendRegistrationMessage(RegistrationMessage.of(user.getEmail(), user.getName()));
+            messagingService.sendMailMessage(MailMessage.registration(user.getEmail(),user.getName()));
+
 
         } catch (RuntimeException e) {
             return new ModelAndView("register.html", Map.of("email", email, "error", "Register failed"));
@@ -142,13 +138,11 @@ public class UserController {
                                  HttpSession session) throws Exception{
         try {
             User user = userService.signin(email, password);
-            amqpMessagingService.sendLoginMessage(LoginMessage.of(user.getEmail(),user.getName(),true));
             /** session，Set改为宏id*/
             session.setAttribute(KEY_USER_ID, user.getId());
             /** redis set*/
             putUserIntoRedis(user);
         } catch (RuntimeException e) {
-            amqpMessagingService.sendLoginMessage(LoginMessage.of(email, "(unknown)", false));
             return new ModelAndView("signin.html", Map.of("email", email, "error", "Signin failed"));
         }
         return new ModelAndView("redirect:/profile");

@@ -1,6 +1,6 @@
 package com.qc.boot;
 
-import com.qc.boot.amqp.RabbitMQConfigration;
+
 import com.qc.boot.config.MasterDataSourceConfiguration;
 import com.qc.boot.config.RoutingDataSourceConfiguration;
 import com.qc.boot.config.SlaveDataSourceConfiguration;
@@ -34,7 +34,6 @@ import org.springframework.web.servlet.HandlerInterceptor;
 //注入自己实现
 @Import({MasterDataSourceConfiguration.class, SlaveDataSourceConfiguration.class,
         RoutingDataSourceConfiguration.class, RedisConfiguration.class,
-        RabbitMQConfigration.class
     })
 
 public class Application implements WebMvcConfigurer{
