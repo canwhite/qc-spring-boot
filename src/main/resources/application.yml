@@ -55,6 +55,12 @@ spring:
     port: 5672
     username: guest
     password: guest
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      auto-offset-reset: latest
+      max-poll-records: 100
+      max-partition-fetch-bytes: 1000000
 
 pebble:
   suffix:
