@@ -12,6 +12,7 @@ brew services restart redis
 * kafka
 * rabbitmq
 * ...  
+
 可以在branch里看到    
 of course，需要自己安装对应工具  
-** main 分支只需要默认启动redis **
+main 分支只需要默认启动redis 
