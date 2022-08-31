@@ -34,14 +34,13 @@ public class MessagingService {
      *
      * */
 
-    public  void  sendRegistrationMessage(RegistrationMessage msg) throws IOException{
+    public void sendRegistrationMessage(RegistrationMessage msg) throws IOException {
         send("topic_registration", msg);
     }
 
-    public  void  sendLoginMessage(LoginMessage msg) throws  IOException{
+    public void sendLoginMessage(LoginMessage msg) throws IOException {
         send("topic_login", msg);
     }
-
     private  void send(String topic,Object msg) throws  IOException{
         /** 消息正文放序列化的json */
         ProducerRecord<String, String> pr = new ProducerRecord<>(topic, JSON.toJSONString(msg));
