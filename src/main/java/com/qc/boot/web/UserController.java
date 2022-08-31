@@ -3,6 +3,8 @@ package com.qc.boot.web;
 import com.alibaba.fastjson.JSON;
 import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
+import com.qc.boot.kafka.MessagingService;
+import com.qc.boot.kafka.messaging.RegistrationMessage;
 import com.qc.boot.redis.RedisService;
 import com.qc.boot.service.StorageService;
 import com.qc.boot.service.UserService;
@@ -52,6 +54,9 @@ public class UserController {
     @Autowired
     AmqpMessagingService amqpMessagingService;
     */
+
+    @Autowired
+    MessagingService messagingService;
 
 
     private void putUserIntoRedis(User user) throws Exception {
@@ -108,6 +113,7 @@ public class UserController {
             logger.info("user registered: {}", user.getEmail());
             //messagingService.sendMailMessage(MailMessage.registration(user.getEmail(),user.getName()));
             //amqpMessagingService.sendRegistrationMessage(RegistrationMessage.of(user.getEmail(), user.getName()));
+            messagingService.sendRegistrationMessage(RegistrationMessage.of(user.getEmail(), user.getName()));
 
         } catch (RuntimeException e) {
             return new ModelAndView("register.html", Map.of("email", email, "error", "Register failed"));

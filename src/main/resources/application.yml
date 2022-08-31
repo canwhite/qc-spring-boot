@@ -55,8 +55,9 @@ spring:
     port: 5672
     username: guest
     password: guest
+  # Kafka配置:
   kafka:
-    bootstrap-servers: localhost:9092
+    bootstrap-servers: 127.0.0.1:9092
     consumer:
       auto-offset-reset: latest
       max-poll-records: 100
