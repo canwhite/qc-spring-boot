@@ -13,11 +13,11 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/springboot_db?characterEncoding=UTF-8&useUnicode=true&useSSL=true&serverTimezone=UTC
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: 715705qc
+    password: xxx
     type: com.alibaba.druid.pool.DruidDataSource
     minIdle: 5
     maxActive: 10
-    maxWait: 5000
+    maxWait: 75000
 
 
 
