@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -13,6 +14,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
@@ -99,12 +103,15 @@ public class UserService {
 
         /** KeyHolder用来后边拿主键 */
         KeyHolder holder = new GeneratedKeyHolder();
+
+
+        /** prepareStatement
+         * 如果需要返回主键，需要加第二个参数Statement.RETURN_GENERATED_KEYS
+         * 占位符也是?
+         * */
+        /**
         //看来是返回nums
-        if(1 != jdbcTemplate.update((conn)->{
-            /** prepareStatement
-             * 如果需要返回主键，需要加第二个参数Statement.RETURN_GENERATED_KEYS
-             * 占位符也是?
-             * */
+        jdbcTemplate.update((conn)->{
             var ps = conn.prepareStatement("INSERT INTO users(email,password,name,createdAt) VALUES(?,?,?,?)",
                     Statement.RETURN_GENERATED_KEYS);
             //set Object从1开始
@@ -112,12 +119,28 @@ public class UserService {
             ps.setObject(2, user.getPassword());
             ps.setObject(3, user.getName());
             ps.setObject(4, user.getCreatedAt());
+            logger.info("----------ps:{}",ps);
             return ps;
-        },holder)){
-            throw new RuntimeException("Insert failed.");
-        }
+        },holder);
+         */
 
-        user.setId(holder.getKey().longValue());
+        String sql = "INSERT INTO users(email,password,name,createdAt) VALUES(?,?,?,?)";
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+
+        jdbcTemplate.update(new PreparedStatementCreator() {
+            @Override
+            public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+                // 指定主键
+                PreparedStatement preparedStatement = connection.prepareStatement(sql, new String[]{"id"});
+                preparedStatement.setObject(1, user.getEmail());
+                preparedStatement.setObject(2, user.getPassword());
+                preparedStatement.setObject(3, user.getName());
+                preparedStatement.setObject(4, user.getCreatedAt());
+                return preparedStatement;
+            }
+        }, keyHolder);
+
+        user.setId(keyHolder.getKey().longValue());
         return user;
     }
 

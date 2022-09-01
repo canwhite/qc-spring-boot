@@ -1,8 +1,5 @@
 package com.qc.boot;
 
-import com.qc.boot.config.MasterDataSourceConfiguration;
-import com.qc.boot.config.RoutingDataSourceConfiguration;
-import com.qc.boot.config.SlaveDataSourceConfiguration;
 import com.qc.boot.interceptor.BlacklistInterceptor;
 import com.qc.boot.redis.RedisConfiguration;
 import org.slf4j.Logger;
@@ -28,12 +25,11 @@ import org.springframework.web.servlet.HandlerInterceptor;
  */
 @RestController
 /** 因为这里我们要自己创建datasource，所以我们先对这项禁用，然后再自己引入 */
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication
+//@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 //@EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class) //上一行已经包含该注解了，所以不用单独加
 //注入自己实现
-@Import({MasterDataSourceConfiguration.class, SlaveDataSourceConfiguration.class,
-        RoutingDataSourceConfiguration.class, RedisConfiguration.class
-    })
+@Import({ RedisConfiguration.class})
 
 public class Application implements WebMvcConfigurer{
 

@@ -1,7 +1,6 @@
 package com.qc.boot.web;
 
 import com.alibaba.fastjson.JSON;
-import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
 import com.qc.boot.redis.RedisService;
 import com.qc.boot.service.StorageService;
@@ -104,6 +103,8 @@ public class UserController {
     @PostMapping("/register")
     public ModelAndView doRegister(@RequestParam("email") String email, @RequestParam("password") String password,
                                    @RequestParam("name") String name) {
+
+        logger.info("-------,{},{},{}",email,password,name);
         try {
             User user = userService.register(email, password, name);
             logger.info("user registered: {}", user.getEmail());
