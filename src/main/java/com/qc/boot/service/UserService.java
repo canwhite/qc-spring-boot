@@ -101,10 +101,6 @@ public class UserService {
         user.setName(name);
         user.setCreatedAt(System.currentTimeMillis());
 
-        /** KeyHolder用来后边拿主键 */
-        KeyHolder holder = new GeneratedKeyHolder();
-
-
         /** prepareStatement
          * 如果需要返回主键，需要加第二个参数Statement.RETURN_GENERATED_KEYS
          * 占位符也是?
@@ -127,7 +123,7 @@ public class UserService {
         String sql = "INSERT INTO users(email,password,name,createdAt) VALUES(?,?,?,?)";
         KeyHolder keyHolder = new GeneratedKeyHolder();
 
-        jdbcTemplate.update(new PreparedStatementCreator() {
+        int num =  jdbcTemplate.update(new PreparedStatementCreator() {
             @Override
             public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
                 // 指定主键
@@ -140,6 +136,7 @@ public class UserService {
             }
         }, keyHolder);
 
+        logger.info("num" + num);
         user.setId(keyHolder.getKey().longValue());
         return user;
     }
