@@ -1,5 +1,6 @@
 package com.qc.boot.service;
 
+import com.qc.boot.dao.impl.UserDaoImpl;
 import com.qc.boot.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,6 +41,9 @@ public class UserService {
     @Autowired
     StorageConfiguration storageConfig;
 
+    @Autowired
+    UserDaoImpl userDao;
+
 
 
     /** ORM把关系型的表数据映射为java对象
@@ -68,11 +72,11 @@ public class UserService {
 
     /** 查  */
     public User getUserById(long id){
-        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",new Object[] {id},userRowMapper);
+        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",userRowMapper,id);
     }
 
     public User getUserByEmail(String email){
-        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",new Object[] {email},userRowMapper);
+        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",userRowMapper,email);
     }
 
     //获取所有users
@@ -92,55 +96,8 @@ public class UserService {
 
     /** 增 */
     public User register(String email,String password,String name){
-        logger.info("try register by {}...", email);
-
-        User user = new User();
-        //然后一通设置
-        user.setEmail(email);
-        user.setPassword(password);
-        user.setName(name);
-        user.setCreatedAt(System.currentTimeMillis());
-
-        /** prepareStatement
-         * 如果需要返回主键，需要加第二个参数Statement.RETURN_GENERATED_KEYS
-         * 占位符也是?
-         * */
-        /**
-        //看来是返回nums
-        jdbcTemplate.update((conn)->{
-            var ps = conn.prepareStatement("INSERT INTO users(email,password,name,createdAt) VALUES(?,?,?,?)",
-                    Statement.RETURN_GENERATED_KEYS);
-            //set Object从1开始
-            ps.setObject(1, user.getEmail());
-            ps.setObject(2, user.getPassword());
-            ps.setObject(3, user.getName());
-            ps.setObject(4, user.getCreatedAt());
-            logger.info("----------ps:{}",ps);
-            return ps;
-        },holder);
-         */
-
-        String sql = "INSERT INTO users(email,password,name,createdAt) VALUES(?,?,?,?)";
-        KeyHolder keyHolder = new GeneratedKeyHolder();
-
-        int num =  jdbcTemplate.update(new PreparedStatementCreator() {
-            @Override
-            public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
-                // 指定主键
-                PreparedStatement preparedStatement = connection.prepareStatement(sql, new String[]{"id"});
-                preparedStatement.setObject(1, user.getEmail());
-                preparedStatement.setObject(2, user.getPassword());
-                preparedStatement.setObject(3, user.getName());
-                preparedStatement.setObject(4, user.getCreatedAt());
-                return preparedStatement;
-            }
-        }, keyHolder);
-
-        logger.info("num" + num);
-        user.setId(keyHolder.getKey().longValue());
-        return user;
+        return  userDao.register(email,password,name);
     }
-
 
 
     /** 改和删 都是用的update，只是语句不同而已
