@@ -1,5 +1,8 @@
 package com.qc.boot.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -14,13 +17,18 @@ import java.time.format.DateTimeFormatter;
  * @author lijinhua
  * @date 2022/8/22 15:09
  */
+@TableName("users")
+/** 此处最好和表名一致，如果不一致，就用上述方式，写下真实表名 */
 public class User {
     private Long id;
 
     private String email;
     private String password;
     private String name;
-
+    /** mp会自动将驼峰转化为下划线,下边一行是不让它转，当然我们也可以集体配置不转
+     *  在yml里配置
+     * */
+//    @TableField(value = "createdAt")
     private long createdAt;
 
     public Long getId() {

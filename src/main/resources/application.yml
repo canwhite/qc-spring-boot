@@ -39,7 +39,10 @@ spring:
     port: 5672
     username: guest
     password: guest
-
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启SQL语句打印
+    map-underscore-to-camel-case: false
 pebble:
   suffix:
   cache: false

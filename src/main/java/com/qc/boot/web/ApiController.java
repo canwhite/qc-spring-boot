@@ -1,6 +1,7 @@
 package com.qc.boot.web;
 
 import com.qc.boot.entity.User;
+import com.qc.boot.mapper.UsersMapper;
 import com.qc.boot.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -27,9 +28,13 @@ public class ApiController {
     @Autowired
     UserService userService;
 
+    @Autowired
+    private UsersMapper usersMapper;
+
     @GetMapping("/users")
     public List<User> users(){
-        return  userService.getUesrs();
+        /** 这里改为mp自具备接口*/
+        return  usersMapper.selectList(null);
     }
 
     /** 根据路径id去请求 */

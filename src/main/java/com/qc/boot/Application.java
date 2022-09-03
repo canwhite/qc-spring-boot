@@ -2,6 +2,7 @@ package com.qc.boot;
 
 import com.qc.boot.interceptor.BlacklistInterceptor;
 import com.qc.boot.redis.RedisConfiguration;
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 //@EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class) //上一行已经包含该注解了，所以不用单独加
 //注入自己实现
 @Import({ RedisConfiguration.class})
-
+@MapperScan("com.qc.boot.mapper")
 public class Application implements WebMvcConfigurer{
 
 
