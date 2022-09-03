@@ -45,10 +45,6 @@ public class UserService {
     UserDaoImpl userDao;
 
 
-
-    /** ORM把关系型的表数据映射为java对象
-     * 参数是要映射成的Entity
-     * */
     RowMapper<User> userRowMapper = new BeanPropertyRowMapper<>(User.class);
 
 
@@ -67,23 +63,19 @@ public class UserService {
     }
 
 
-
-
-
     /** 查  */
     public User getUserById(long id){
-        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",userRowMapper,id);
+        return  userDao.getUserById(id);
     }
 
     public User getUserByEmail(String email){
-        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",userRowMapper,email);
+        return  userDao.getUserByEmail(email);
     }
 
     //获取所有users
     public List<User> getUesrs(){
-        return  jdbcTemplate.query("SELECT * FROM users",userRowMapper);
+        return  userDao.getUesrs();
     }
-
 
     public User signin(String email,String password){
         logger.info("try login by {}...", email);
@@ -106,9 +98,8 @@ public class UserService {
      * return nums
      * */
 
-
     public void updateUser(User user){
-        if(1 != jdbcTemplate.update("UPDATE users SET name = ? WHERE id=?", user.getName(), user.getId())){
+        if(1 != userDao.updateUser(user)){
             throw new RuntimeException("User not found by id");
         }
     }

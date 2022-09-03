@@ -5,8 +5,10 @@ import com.qc.boot.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
@@ -14,6 +16,7 @@ import org.springframework.stereotype.Repository;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * 功能描述:
@@ -26,9 +29,13 @@ import java.sql.SQLException;
 public class UserDaoImpl implements UserDao {
     @Autowired
     JdbcTemplate jdbcTemplate;
-    //直接LoggerFactory打头
+    /** logger */
     final  Logger logger = LoggerFactory.getLogger(getClass());
+    /** ORM把关系型的表数据映射为java对象,参数是要映射成的Entity*/
+    RowMapper<User> userRowMapper = new BeanPropertyRowMapper<>(User.class);
 
+
+    /** 注册，增删改都用update */
     @Override
     public User register(String email, String password, String name) {
         //注册操作
@@ -62,4 +69,34 @@ public class UserDaoImpl implements UserDao {
         user.setId(keyHolder.getKey().longValue());
         return user;
     }
+
+
+    @Override
+    public int updateUser(User user) {
+        //updte会返回更新的数字
+        return jdbcTemplate.update("UPDATE users SET name = ? WHERE id=?",user.getName(),user.getId());
+    }
+
+
+    /** 通过id获取user */
+    @Override
+    public User getUserById(long id) {
+        return jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",userRowMapper,id);
+    }
+
+
+    /** 通过email获取user*/
+    @Override
+    public User getUserByEmail(String email) {
+        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",userRowMapper,email);
+    }
+
+    /** 获取所有users*/
+    @Override
+    public List<User> getUesrs() {
+        /** 查询所有的用query，queryForObject是针对有参数的情况来说的*/
+        return  jdbcTemplate.query("SELECT * FROM users",userRowMapper);
+    }
+
+
 }
