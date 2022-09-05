@@ -1,9 +1,11 @@
 package com.qc.boot.web;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.qc.boot.entity.User;
 import com.qc.boot.mapper.UsersMapper;
 import com.qc.boot.service.UserService;
+import io.micrometer.core.instrument.step.StepCounter;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import org.slf4j.Logger;
@@ -110,11 +112,67 @@ public class ApiController {
         return  Map.of("email",email,"name",name);
     }
 
-    /** 删，根据email去删除*/
+    /** 删，根据email拿到id去删除,直接根据id的不用写了*/
+    @PostMapping("deleteUserByEmail")
+    public Map<String, Object> deleteUserByEmail(@RequestParam Map<String,Object> params){
+        //先根据email查到对应id
+        /**
+        QueryWrapper<User> wrapper = new QueryWrapper<>();
+        //拿到Email比对获取，查询
+        for (Map.Entry<String,Object> entry:params.entrySet()
+             ) {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+
+            if(key.equals("email")){
+                //将查询条件配置好
+                wrapper.eq("email",value);
+            }
+        }
+         User user =  usersMapper.selectOne(wrapper);
+         System.out.println("user" + user);
+         */
+
+        var num = usersMapper.deleteByMap(params);
+        System.out.println("-----num-------"+num);
+        if(num != 1){
+            throw new RuntimeException("register failed");
+        }
+        return Map.of("code",200,"msg","success");
+
+    }
 
 
 
-    /** 更新，通过email去更新 */
+    /** 更新，通过email去更新，在这里可以试一下lambda */
+    @GetMapping("/updateUser")
+    public User updateUser(@RequestParam Map<String,Object> params){
+        //
+        UpdateWrapper<User> updateWrapper = new UpdateWrapper<>();
+        List<User> users = usersMapper.selectByMap(params);
+        System.out.println("--users--"+users.size());
+        if(users.size() > 0){
+            //c
+
+            User user = users.get(0);
+            user.setName("zack123");
+
+
+            /**
+             * user.setName("zack123");
+             * usersMapper.updateById(user); //传入的是个对象
+             * */
+            /** 更新的时候需要加一个user*/
+
+            var num =  usersMapper.updateById(user);
+            if(num != 1){
+                throw  new RuntimeException("update error");
+            }
+            return  user;
+        }
+        return  null;
+    }
+
 
 
 
