@@ -42,7 +42,7 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启SQL语句打印
-    map-underscore-to-camel-case: false
+    map-underscore-to-camel-case: false #相当于关闭了驼峰和下划线转化
 pebble:
   suffix:
   cache: false

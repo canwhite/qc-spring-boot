@@ -2,6 +2,7 @@ package com.qc.boot.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
@@ -23,6 +24,8 @@ public class User {
     private Long id;
 
     private String email;
+    /**  如果密码不能返回，我们对它进行处理 */
+    @TableField(select = false) //注解进行排除
     private String password;
     private String name;
     /** mp会自动将驼峰转化为下划线,下边一行是不让它转，当然我们也可以集体配置不转
