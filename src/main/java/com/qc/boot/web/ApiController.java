@@ -73,12 +73,11 @@ public class ApiController {
     @PostMapping("/register")
     public Map<String, String> register(@RequestParam Map<String, String> params){
         //尝试一下
-        System.out.println("--params--" + params);
         String email ="";
         String password = "";
         String name = "";
 
-        //通过forin拿到对应entry
+        //通过forin拿到对应entry,java也有entries
         for (Map.Entry<String,String> entry: params.entrySet()) {
             String key = entry.getKey();//从entry里getKey
             String value = entry.getValue();//从entry里getValue
@@ -94,9 +93,8 @@ public class ApiController {
             }
         }
 
-        //通过insert新增用户
+        //通过insert新增用户，然后一通设置
         User user = new User();
-        //然后一通设置
         user.setEmail(email);
         user.setPassword(password);
         user.setName(name);
@@ -106,9 +104,7 @@ public class ApiController {
         if(insert != 1){
             throw new RuntimeException("register failed");
         }
-        //Map.of这样很好用啊
-        //同样的有时候为了方便我们可以使用
-        //List.of("apple", "pear", "banana");
+        //Map.of or List.of("apple", "pear", "banana");
         return  Map.of("email",email,"name",name);
     }
 
