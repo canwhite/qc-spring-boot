@@ -149,22 +149,33 @@ public class ApiController {
     public User updateUser(@RequestParam Map<String,Object> params){
         //
         UpdateWrapper<User> updateWrapper = new UpdateWrapper<>();
-        List<User> users = usersMapper.selectByMap(params);
+        List<User> users = usersMapper.selectByMap(params);//拿到users
         System.out.println("--users--"+users.size());
         if(users.size() > 0){
-            //c
-
+            //赋值
             User user = users.get(0);
-            user.setName("zack123");
+            user.setName("zack");
 
-
+            //条件
+            for (Map.Entry<String,Object> entry: params.entrySet()
+                 ) {
+                String key = entry.getKey();
+                String value = entry.getValue().toString();
+                if(key.equals("email")){
+                    updateWrapper.eq("email",value);
+                }
+            }
+            
             /**
              * user.setName("zack123");
              * usersMapper.updateById(user); //传入的是个对象
              * */
             /** 更新的时候需要加一个user*/
 
-            var num =  usersMapper.updateById(user);
+            //var num =  usersMapper.updateById(user);
+            //上边加了wrapper
+            var num = usersMapper.update(user,updateWrapper);
+
             if(num != 1){
                 throw  new RuntimeException("update error");
             }
