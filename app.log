@@ -1749,3 +1749,224 @@ com.rabbitmq.client.MalformedFrameException: AMQP protocol version mismatch; we 
 2022-09-07 16:45:21.702  INFO 51512 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
 2022-09-07 16:45:21.702  INFO 51512 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-09-07 16:45:21.724  INFO 51512 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-07 16:55:36.229  INFO 54896 --- [restartedMain] com.qc.boot.Application                  : Starting Application on lijinhua.local with PID 54896 (/Users/mac/Desktop/qc-spring-boot/target/classes started by mac in /Users/mac/Desktop/qc-spring-boot)
+2022-09-07 16:55:36.231  INFO 54896 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-09-07 16:55:36.274  INFO 54896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-07 16:55:36.274  INFO 54896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-07 16:55:37.402  INFO 54896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-09-07 16:55:37.471  INFO 54896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 1 Elasticsearch repository interfaces.
+2022-09-07 16:55:37.477  INFO 54896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-09-07 16:55:37.484  INFO 54896 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-09-07 16:55:38.190  INFO 54896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-07 16:55:38.202  INFO 54896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-07 16:55:38.203  INFO 54896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-09-07 16:55:38.282  INFO 54896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-07 16:55:38.282  INFO 54896 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2007 ms
+2022-09-07 16:55:38.371  INFO 54896 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-09-07 16:55:38.371  INFO 54896 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-09-07 16:55:38.371  INFO 54896 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-09-07 16:55:38.579  INFO 54896 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-09-07 16:55:38.580  INFO 54896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-07 16:55:38.846  INFO 54896 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-09-07 16:55:38.847  INFO 54896 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-09-07 16:55:38.854  INFO 54896 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-09-07 16:55:38.862  INFO 54896 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-09-07 16:55:38.867  INFO 54896 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 16:55:38.870  INFO 54896 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-07 16:55:39.329  WARN 54896 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:55:39.329  WARN 54896 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:55:39.329  WARN 54896 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:55:39.330  WARN 54896 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:55:39.457  INFO 54896 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.0.RELEASE
+2022-09-07 16:55:39.457  INFO 54896 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2022-09-07 16:55:39.457  INFO 54896 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2022-09-07 16:55:39.458  INFO 54896 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.17.4
+2022-09-07 16:55:39.458  WARN 54896 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.17.4
+2022-09-07 16:55:39.602  INFO 54896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-07 16:55:39.791  WARN 54896 --- [restartedMain] .d.e.r.s.AbstractElasticsearchRepository : Cannot create index: Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]; nested exception is [students/Xsw5xvauQwGVwoqnQ49JIg] ElasticsearchStatusException[Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]]
+2022-09-07 16:55:40.006  INFO 54896 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-09-07 16:55:40.208  INFO 54896 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-07 16:55:41.034  INFO 54896 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 16:55:41.034  INFO 54896 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 16:55:41.078  INFO 54896 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-09-07 16:55:41.137  INFO 54896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-07 16:55:41.157  INFO 54896 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.376 seconds (JVM running for 11.697)
+2022-09-07 16:55:41.340  INFO 54896 --- [RMI TCP Connection(1)-192.168.23.106] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-07 16:55:41.341  INFO 54896 --- [RMI TCP Connection(1)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-07 16:55:41.352  INFO 54896 --- [RMI TCP Connection(1)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-09-07 16:55:41.367  INFO 54896 --- [RMI TCP Connection(2)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-09-07 16:55:41.367  INFO 54896 --- [RMI TCP Connection(2)-192.168.23.106] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 16:55:41.368  INFO 54896 --- [RMI TCP Connection(2)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-09-07 16:55:49.915  WARN 54896 --- [http-nio-8080-exec-1] org.elasticsearch.client.RestClient      : request [POST http://localhost:9200/students/_search?pre_filter_shard_size=128&typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2022-09-07 16:55:49.926  WARN 54896 --- [http-nio-8080-exec-1] org.elasticsearch.client.RestClient      : request [POST http://localhost:9200/students/_search?pre_filter_shard_size=128&typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2022-09-07 16:56:33.374  INFO 54896 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-07 16:56:33.389  INFO 54896 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-09-07 16:56:33.392  INFO 54896 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-09-07 16:56:33.393  INFO 54896 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-07 16:56:33.396  INFO 54896 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-07 16:57:11.660  INFO 55221 --- [restartedMain] com.qc.boot.Application                  : Starting Application on lijinhua.local with PID 55221 (/Users/mac/Desktop/qc-spring-boot/target/classes started by mac in /Users/mac/Desktop/qc-spring-boot)
+2022-09-07 16:57:11.664  INFO 55221 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-09-07 16:57:11.721  INFO 55221 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-07 16:57:11.721  INFO 55221 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-07 16:57:22.386  INFO 55259 --- [restartedMain] com.qc.boot.Application                  : Starting Application on lijinhua.local with PID 55259 (/Users/mac/Desktop/qc-spring-boot/target/classes started by mac in /Users/mac/Desktop/qc-spring-boot)
+2022-09-07 16:57:22.389  INFO 55259 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-09-07 16:57:22.463  INFO 55259 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-07 16:57:22.463  INFO 55259 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-07 16:57:23.535  INFO 55259 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-09-07 16:57:23.633  INFO 55259 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 1 Elasticsearch repository interfaces.
+2022-09-07 16:57:23.641  INFO 55259 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-09-07 16:57:23.651  INFO 55259 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-09-07 16:57:24.322  INFO 55259 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-07 16:57:24.334  INFO 55259 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-07 16:57:24.335  INFO 55259 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-09-07 16:57:24.413  INFO 55259 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-07 16:57:24.413  INFO 55259 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1950 ms
+2022-09-07 16:57:24.506  INFO 55259 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-09-07 16:57:24.506  INFO 55259 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-09-07 16:57:24.506  INFO 55259 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-09-07 16:57:24.738  INFO 55259 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-09-07 16:57:24.739  INFO 55259 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-07 16:57:24.953  INFO 55259 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-09-07 16:57:24.953  INFO 55259 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-09-07 16:57:24.959  INFO 55259 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-09-07 16:57:24.962  INFO 55259 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-09-07 16:57:24.967  INFO 55259 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 16:57:24.969  INFO 55259 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-07 16:57:25.418  WARN 55259 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:57:25.418  WARN 55259 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:57:25.418  WARN 55259 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:57:25.418  WARN 55259 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:57:25.524  INFO 55259 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.0.RELEASE
+2022-09-07 16:57:25.525  INFO 55259 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2022-09-07 16:57:25.525  INFO 55259 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2022-09-07 16:57:25.525  INFO 55259 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.17.4
+2022-09-07 16:57:25.525  WARN 55259 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.17.4
+2022-09-07 16:57:25.622  INFO 55259 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-07 16:57:25.823  WARN 55259 --- [restartedMain] .d.e.r.s.AbstractElasticsearchRepository : Cannot create index: Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]; nested exception is [students/Xsw5xvauQwGVwoqnQ49JIg] ElasticsearchStatusException[Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]]
+2022-09-07 16:57:26.029  INFO 55259 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-09-07 16:57:26.247  INFO 55259 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-07 16:57:27.180  INFO 55259 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 16:57:27.180  INFO 55259 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 16:57:27.254  INFO 55259 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-09-07 16:57:27.319  INFO 55259 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-07 16:57:27.336  INFO 55259 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.496 seconds (JVM running for 11.474)
+2022-09-07 16:57:27.843  INFO 55259 --- [RMI TCP Connection(4)-192.168.23.106] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-07 16:57:27.844  INFO 55259 --- [RMI TCP Connection(4)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-07 16:57:27.858  INFO 55259 --- [RMI TCP Connection(4)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-09-07 16:57:27.873  INFO 55259 --- [RMI TCP Connection(3)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-09-07 16:57:27.874  INFO 55259 --- [RMI TCP Connection(3)-192.168.23.106] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 16:57:27.874  INFO 55259 --- [RMI TCP Connection(3)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-09-07 16:57:34.418  WARN 55259 --- [http-nio-8080-exec-1] org.elasticsearch.client.RestClient      : request [POST http://localhost:9200/students/_search?pre_filter_shard_size=128&typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2022-09-07 16:58:31.809  INFO 55259 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-07 16:58:31.825  INFO 55259 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-09-07 16:58:31.827  INFO 55259 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-09-07 16:58:31.827  INFO 55259 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-07 16:58:31.830  INFO 55259 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-07 16:59:01.135  INFO 55590 --- [restartedMain] com.qc.boot.Application                  : Starting Application on lijinhua.local with PID 55590 (/Users/mac/Desktop/qc-spring-boot/target/classes started by mac in /Users/mac/Desktop/qc-spring-boot)
+2022-09-07 16:59:01.137  INFO 55590 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-09-07 16:59:01.179  INFO 55590 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-07 16:59:01.180  INFO 55590 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-07 16:59:02.101  INFO 55590 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-09-07 16:59:02.169  INFO 55590 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64ms. Found 1 Elasticsearch repository interfaces.
+2022-09-07 16:59:02.175  INFO 55590 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-09-07 16:59:02.181  INFO 55590 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-09-07 16:59:02.892  INFO 55590 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-07 16:59:02.903  INFO 55590 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-07 16:59:02.903  INFO 55590 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-09-07 16:59:02.979  INFO 55590 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-07 16:59:02.979  INFO 55590 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1799 ms
+2022-09-07 16:59:03.055  INFO 55590 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-09-07 16:59:03.055  INFO 55590 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-09-07 16:59:03.055  INFO 55590 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-09-07 16:59:03.249  INFO 55590 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-09-07 16:59:03.250  INFO 55590 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-07 16:59:03.498  INFO 55590 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-09-07 16:59:03.499  INFO 55590 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-09-07 16:59:03.506  INFO 55590 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-09-07 16:59:03.510  INFO 55590 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-09-07 16:59:03.515  INFO 55590 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 16:59:03.518  INFO 55590 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-07 16:59:03.948  WARN 55590 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:59:03.948  WARN 55590 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:59:03.948  WARN 55590 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:59:03.948  WARN 55590 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 16:59:04.067  INFO 55590 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.0.RELEASE
+2022-09-07 16:59:04.067  INFO 55590 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2022-09-07 16:59:04.067  INFO 55590 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2022-09-07 16:59:04.067  INFO 55590 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.17.4
+2022-09-07 16:59:04.067  WARN 55590 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.17.4
+2022-09-07 16:59:04.187  INFO 55590 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-07 16:59:04.363  WARN 55590 --- [restartedMain] .d.e.r.s.AbstractElasticsearchRepository : Cannot create index: Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]; nested exception is [students/Xsw5xvauQwGVwoqnQ49JIg] ElasticsearchStatusException[Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]]
+2022-09-07 16:59:04.551  INFO 55590 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-09-07 16:59:04.751  INFO 55590 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-07 16:59:05.544  INFO 55590 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 16:59:05.544  INFO 55590 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 16:59:05.596  INFO 55590 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-09-07 16:59:05.653  INFO 55590 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-07 16:59:05.671  INFO 55590 --- [restartedMain] com.qc.boot.Application                  : Started Application in 4.902 seconds (JVM running for 10.682)
+2022-09-07 16:59:05.848  INFO 55590 --- [RMI TCP Connection(1)-192.168.23.106] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-07 16:59:05.849  INFO 55590 --- [RMI TCP Connection(1)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-07 16:59:05.863  INFO 55590 --- [RMI TCP Connection(1)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2022-09-07 16:59:05.879  INFO 55590 --- [RMI TCP Connection(2)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-09-07 16:59:05.880  INFO 55590 --- [RMI TCP Connection(2)-192.168.23.106] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 16:59:05.880  INFO 55590 --- [RMI TCP Connection(2)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-09-07 16:59:09.868  WARN 55590 --- [http-nio-8080-exec-1] org.elasticsearch.client.RestClient      : request [POST http://localhost:9200/students/_search?pre_filter_shard_size=128&typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2022-09-07 17:00:54.058  INFO 55590 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-07 17:00:54.078  INFO 55590 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-09-07 17:00:54.081  INFO 55590 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-09-07 17:00:54.081  INFO 55590 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-07 17:00:54.084  INFO 55590 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-07 17:01:04.994  INFO 56000 --- [restartedMain] com.qc.boot.Application                  : Starting Application on lijinhua.local with PID 56000 (/Users/mac/Desktop/qc-spring-boot/target/classes started by mac in /Users/mac/Desktop/qc-spring-boot)
+2022-09-07 17:01:04.997  INFO 56000 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-09-07 17:01:05.035  INFO 56000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-07 17:01:05.035  INFO 56000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-07 17:01:06.076  INFO 56000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-09-07 17:01:06.146  INFO 56000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 1 Elasticsearch repository interfaces.
+2022-09-07 17:01:06.152  INFO 56000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-09-07 17:01:06.158  INFO 56000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-09-07 17:01:06.887  INFO 56000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-07 17:01:06.898  INFO 56000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-07 17:01:06.898  INFO 56000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-09-07 17:01:06.973  INFO 56000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-07 17:01:06.973  INFO 56000 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1938 ms
+2022-09-07 17:01:07.050  INFO 56000 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-09-07 17:01:07.050  INFO 56000 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-09-07 17:01:07.051  INFO 56000 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-09-07 17:01:07.253  INFO 56000 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-09-07 17:01:07.254  INFO 56000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-07 17:01:07.486  INFO 56000 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-09-07 17:01:07.487  INFO 56000 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-09-07 17:01:07.492  INFO 56000 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-09-07 17:01:07.496  INFO 56000 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-09-07 17:01:07.500  INFO 56000 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 17:01:07.503  INFO 56000 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-07 17:01:07.940  WARN 56000 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.geo.Point to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 17:01:07.941  WARN 56000 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.geo.Point as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 17:01:07.941  WARN 56000 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class org.springframework.data.elasticsearch.core.geo.GeoPoint to interface java.util.Map as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 17:01:07.941  WARN 56000 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from interface java.util.Map to class org.springframework.data.elasticsearch.core.geo.GeoPoint as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-09-07 17:01:08.059  INFO 56000 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Spring Data Elasticsearch: 4.0.0.RELEASE
+2022-09-07 17:01:08.059  INFO 56000 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client in build: 7.6.2
+2022-09-07 17:01:08.059  INFO 56000 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch Client used: 7.6.2
+2022-09-07 17:01:08.060  INFO 56000 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version Elasticsearch cluster: 7.17.4
+2022-09-07 17:01:08.060  WARN 56000 --- [restartedMain] o.s.d.elasticsearch.support.VersionInfo  : Version mismatch in between Elasticsearch Client and Cluster: 7.6.2 - 7.17.4
+2022-09-07 17:01:08.169  INFO 56000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-07 17:01:08.356  WARN 56000 --- [restartedMain] .d.e.r.s.AbstractElasticsearchRepository : Cannot create index: Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]; nested exception is [students/Xsw5xvauQwGVwoqnQ49JIg] ElasticsearchStatusException[Elasticsearch exception [type=resource_already_exists_exception, reason=index [students/Xsw5xvauQwGVwoqnQ49JIg] already exists]]
+2022-09-07 17:01:08.544  INFO 56000 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-09-07 17:01:08.823  INFO 56000 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-07 17:01:09.638  INFO 56000 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 17:01:09.639  INFO 56000 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-07 17:01:09.693  INFO 56000 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-09-07 17:01:09.745  INFO 56000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-07 17:01:09.762  INFO 56000 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.129 seconds (JVM running for 10.947)
+2022-09-07 17:01:10.229  INFO 56000 --- [RMI TCP Connection(2)-192.168.23.106] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-07 17:01:10.231  INFO 56000 --- [RMI TCP Connection(2)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-07 17:01:10.246  INFO 56000 --- [RMI TCP Connection(2)-192.168.23.106] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2022-09-07 17:01:10.266  INFO 56000 --- [RMI TCP Connection(3)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-09-07 17:01:10.267  INFO 56000 --- [RMI TCP Connection(3)-192.168.23.106] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-07 17:01:10.268  INFO 56000 --- [RMI TCP Connection(3)-192.168.23.106] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-09-07 17:01:20.374  WARN 56000 --- [http-nio-8080-exec-1] org.elasticsearch.client.RestClient      : request [POST http://localhost:9200/students/_search?pre_filter_shard_size=128&typed_keys=true&max_concurrent_shard_requests=5&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true&ignore_throttled=true&search_type=dfs_query_then_fetch&batched_reduce_size=512&ccs_minimize_roundtrips=true] returned 1 warnings: [299 Elasticsearch-7.17.4-79878662c54c886ae89206c685d9f1051a9d6411 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+2022-09-07 17:01:51.083  INFO 56000 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-07 17:01:51.102  INFO 56000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-09-07 17:01:51.105  INFO 56000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-09-07 17:01:51.105  INFO 56000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-07 17:01:51.108  INFO 56000 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

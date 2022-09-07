@@ -3,6 +3,7 @@ package com.qc.boot.web;
 import com.qc.boot.elastic.StudentsDao;
 import com.qc.boot.entity.Students;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -63,11 +64,23 @@ public class ElasticController {
         return list;
     }
 
+    @GetMapping("/testCount")
+    public  Map<String, Object> testCount(){
+        return  Map.of("count",studentsDao.count(),"msg","success") ;
+    }
 
 
+    @GetMapping("/testGetByName")
+    public List<Students>  testGetByName(){
+        List<Students> list = studentsDao.getByName("lisi");
+        return  list;
+    }
 
+
+    @GetMapping("/testPage")
+    public Page<Students>  testPage(){
+        Page<Students> page = studentsDao.pageQuery(0, 10, "wangwu");
+        return  page;
+    }
     
-
-
-
 }
