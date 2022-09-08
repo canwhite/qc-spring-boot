@@ -8,7 +8,11 @@ spring boot learnning
 brew install redis
 brew services restart redis
 ```
-然后一些三方工具的使用像kafka、rabbitmq  
-我们可以在branch里看到    
-当然，你需要自己安装相关工具  
-main 分支只需要默认启动redis
+然后一些三方工具的使用像
+* kafka
+* rabbitmq
+* ...  
+
+可以在branch里看到    
+of course，需要自己安装对应工具  
+main 分支只需要默认启动redis 
