@@ -55,6 +55,12 @@ spring:
     port: 5672
     username: guest
     password: guest
+  data:
+    mongodb: 
+      uri: mongodb://localhost:27017/springboot_db
+      #如果设置了密码 uri: mongodb://root:123456@localhost:27017/test
+      #实际上就是按照properties结构一层层剥出来的，也就是如果我们知道了properties结构，就可以隔离出yml配置
+      #spring.data.mongodb.uri=mongodb://test:test@localhost:27017/test
 
 pebble:
   suffix:
