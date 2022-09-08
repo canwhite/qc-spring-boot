@@ -8,6 +8,7 @@ package com.qc.boot.dao;
  */
 
 import com.qc.boot.entity.Students;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

@@ -1,18 +1,20 @@
 package com.qc.boot.dao.impl;
 
 import com.mongodb.client.result.UpdateResult;
-import com.mongodb.internal.bulk.UpdateRequest;
 import com.qc.boot.dao.StudentsDao;
+import com.qc.boot.dao.StudentsRepository;
 import com.qc.boot.entity.Students;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 
@@ -31,24 +33,39 @@ public class StudentsImpl implements StudentsDao {
     @Autowired
     MongoTemplate mongoTemplate;
 
+    @Autowired
+    StudentsRepository studentsRepository;
+
+
     @Override
     public void saveStudent(Students student) {
         //用save方法，原生方法应该是insert
         mongoTemplate.save(student);
     }
 
+    /** 将两个find方法置换为repo方法 */
     @Override
     public Students findStudentByName(String name) {
         //这个Query是mongodb给的
+        /**
         Query query = new Query(Criteria.where("username").is(name));
         Students student = mongoTemplate.findOne(query,Students.class);
         return student;
+         */
+
+        return studentsRepository.findByUsername(name);
+
     }
 
     /** 查询所有 */
     @Override
     public List<Students> findAll() {
+        /**
         return mongoTemplate.findAll(Students.class);
+         */
+        Pageable pageable = PageRequest.of(0, 10);
+        Page page =  studentsRepository.findAll(pageable);
+        return  page.getContent();
     }
 
     @Override

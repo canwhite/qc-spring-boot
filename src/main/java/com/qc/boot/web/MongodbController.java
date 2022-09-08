@@ -22,8 +22,10 @@ import java.util.Map;
 @RestController
 @RequestMapping("/mongodb")
 public class MongodbController {
+
     @Autowired
     StudentsDao studentsDao;
+
 
     @GetMapping("/saveStudent")
     public Map<String,Object> saveStudent(){
@@ -66,7 +68,7 @@ public class MongodbController {
         studentsDao.deleteStudentById(1L);
         return  Map.of("msg","success");
     }
-    
+
 
 
 
