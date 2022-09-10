@@ -6636,3 +6636,49 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 2022-09-08 15:59:55.848  INFO 69044 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
 2022-09-08 15:59:55.848  INFO 69044 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-09-08 15:59:55.856  INFO 69044 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-08 21:48:25.649  INFO 3514 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 3514 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-09-08 21:48:25.651  INFO 3514 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-09-08 21:48:25.680  INFO 3514 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-08 21:48:25.680  INFO 3514 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-08 21:48:26.106  INFO 3514 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-09-08 21:48:26.131  INFO 3514 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 1 MongoDB repository interfaces.
+2022-09-08 21:48:26.379  INFO 3514 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-08 21:48:26.382  INFO 3514 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-08 21:48:26.382  INFO 3514 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-09-08 21:48:26.405  INFO 3514 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-09-08 21:48:26.406  INFO 3514 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 726 ms
+2022-09-08 21:48:26.435  INFO 3514 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-09-08 21:48:26.435  INFO 3514 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-09-08 21:48:26.435  INFO 3514 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-09-08 21:48:26.501  INFO 3514 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (null)
+2022-09-08 21:48:26.502  INFO 3514 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-08 21:48:26.599  INFO 3514 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose start
+2022-09-08 21:48:26.600  INFO 3514 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose synched
+2022-09-08 21:48:26.602  INFO 3514 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose script done
+2022-09-08 21:48:26.604  INFO 3514 --- [restartedMain] hsqldb.db.HSQLDB82C4A7B2B5.ENGINE        : checkpointClose end
+2022-09-08 21:48:26.606  INFO 3514 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-08 21:48:26.607  INFO 3514 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-08 21:48:26.634  INFO 3514 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-09-08 21:48:26.655  INFO 3514 --- [cluster-ClusterId{value='6319f2aabfe93c7f7d7d82e2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2022-09-08 21:48:26.658  INFO 3514 --- [cluster-ClusterId{value='6319f2aabfe93c7f7d7d82e2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1240792}
+2022-09-08 21:48:26.755  INFO 3514 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-09-08 21:48:26.833  INFO 3514 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-09-08 21:48:26.917  INFO 3514 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-08 21:48:27.217  INFO 3514 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-08 21:48:27.217  INFO 3514 --- [restartedMain] com.qc.boot.config.RoutingDataSource     : determin target datasource: HikariDataSource (HikariPool-1)
+2022-09-08 21:48:27.234  INFO 3514 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-09-08 21:48:27.267  INFO 3514 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-08 21:48:27.274  INFO 3514 --- [restartedMain] com.qc.boot.Application                  : Started Application in 1.783 seconds (JVM running for 7.139)
+2022-09-08 21:48:27.668  INFO 3514 --- [RMI TCP Connection(1)-192.168.31.61] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-08 21:48:27.668  INFO 3514 --- [RMI TCP Connection(1)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-08 21:48:27.670  INFO 3514 --- [RMI TCP Connection(2)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-09-08 21:48:27.670  INFO 3514 --- [RMI TCP Connection(2)-192.168.31.61] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (feature not supported)
+2022-09-08 21:48:27.670  INFO 3514 --- [RMI TCP Connection(2)-192.168.31.61] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-09-08 21:48:27.672  INFO 3514 --- [RMI TCP Connection(1)-192.168.31.61] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-09-08 21:48:27.684  INFO 3514 --- [RMI TCP Connection(2)-192.168.31.61] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2022-09-08 21:50:21.817  INFO 3514 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-09-08 21:50:21.827  INFO 3514 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:6}] to localhost:27017 because the pool has been closed.
+2022-09-08 21:50:21.829  INFO 3514 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-09-08 21:50:21.831  INFO 3514 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-09-08 21:50:21.831  INFO 3514 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-08 21:50:21.832  INFO 3514 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
