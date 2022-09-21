@@ -35,6 +35,34 @@ public class UserDaoImpl implements UserDao {
     RowMapper<User> userRowMapper = new BeanPropertyRowMapper<>(User.class);
 
 
+    /** 整体使用概括
+     * forObject查的时候，可以选择将orm映射工具放中间，然后后边我们补充查询参数
+     * 当然直接query的时候我们用不着用查询参数
+     * 其他的增删改都是update
+     * 增的时候如果最后需要拿到主键，需要keyHolder和preparedStatement
+    */
+
+
+    @Override
+    public User getUserById(long id) {
+        return jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",userRowMapper,id);
+    }
+
+
+    /** 通过email获取user*/
+    @Override
+    public User getUserByEmail(String email) {
+        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",userRowMapper,email);
+    }
+
+    /** 获取所有users*/
+    @Override
+    public List<User> getUesrs() {
+        /** 查询所有的用query，queryForObject是针对有参数的情况来说的*/
+        return  jdbcTemplate.query("SELECT * FROM users",userRowMapper);
+    }
+
+
     /** 注册，增删改都用update */
     @Override
     public User register(String email, String password, String name) {
@@ -47,8 +75,9 @@ public class UserDaoImpl implements UserDao {
         user.setCreatedAt(System.currentTimeMillis());
 
         String sql = "INSERT INTO users(email,password,name,createdAt) VALUES(?,?,?,?)";
-        KeyHolder keyHolder = new GeneratedKeyHolder();
+        KeyHolder keyHolder = new GeneratedKeyHolder(); 
 
+        //当时报错，最后网上找的mysql版本，刚开始写密码一直报错，可能是密码难度有问题没有设置成功，最后换了比较难的一种
         int num =  jdbcTemplate.update(new PreparedStatementCreator() {
             @Override
             public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
@@ -78,25 +107,6 @@ public class UserDaoImpl implements UserDao {
     }
 
 
-    /** 通过id获取user */
-    @Override
-    public User getUserById(long id) {
-        return jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",userRowMapper,id);
-    }
-
-
-    /** 通过email获取user*/
-    @Override
-    public User getUserByEmail(String email) {
-        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",userRowMapper,email);
-    }
-
-    /** 获取所有users*/
-    @Override
-    public List<User> getUesrs() {
-        /** 查询所有的用query，queryForObject是针对有参数的情况来说的*/
-        return  jdbcTemplate.query("SELECT * FROM users",userRowMapper);
-    }
 
 
 }
