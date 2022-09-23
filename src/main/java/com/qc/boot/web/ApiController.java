@@ -4,8 +4,9 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.qc.boot.entity.User;
 import com.qc.boot.mapper.UsersMapper;
+import com.qc.boot.service.UserMappperService;
 import com.qc.boot.service.UserService;
-import io.micrometer.core.instrument.step.StepCounter;
+// import io.micrometer.core.instrument.step.StepCounter;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import org.slf4j.Logger;
@@ -39,6 +40,10 @@ public class ApiController {
     @Autowired
     private UsersMapper usersMapper;
 
+    /* 基于dao重新封装了一层，慢慢替换上边的mapper */
+    @Autowired
+    UserMappperService userMappperService;
+
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
 
@@ -46,7 +51,7 @@ public class ApiController {
     @GetMapping("/users")
     public List<User> users(){
         /** 这里改为mp自具备接口*/
-        return  usersMapper.selectList(null);
+        return  userMappperService.getUsers();
     }
 
     /** --mp查，用get方法通过email查*/
@@ -132,7 +137,7 @@ public class ApiController {
          */
 
         var num = usersMapper.deleteByMap(params);
-        System.out.println("-----num-------"+num);
+        // System.out.println("-----num-------"+num);
         if(num != 1){
             throw new RuntimeException("register failed");
         }
@@ -148,7 +153,7 @@ public class ApiController {
         //
         UpdateWrapper<User> updateWrapper = new UpdateWrapper<>();
         List<User> users = usersMapper.selectByMap(params);//拿到users
-        System.out.println("--users--"+users.size());
+        // System.out.println("--users--"+users.size());
         if(users.size() > 0){
             //赋值
             User user = users.get(0);
@@ -181,10 +186,6 @@ public class ApiController {
         }
         return  null;
     }
-
-
-
-
 
 
 

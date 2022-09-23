@@ -18,7 +18,7 @@ import java.time.format.DateTimeFormatter;
  * @author lijinhua
  * @date 2022/8/22 15:09
  */
-@TableName("users")
+@TableName("users") //使用mp的时候，如果entity的名字和表名不一致，这里需要as一下
 /** 此处最好和表名一致，如果不一致，就用上述方式，写下真实表名 */
 public class User {
     private Long id;
@@ -32,7 +32,7 @@ public class User {
      *  在yml里配置
      * */
 //    @TableField(value = "createdAt")
-    private long createdAt;
+    private long createdAt; //mp默认下划线处理而不是驼峰，但是我们可以在yml中关闭这个
 
     public Long getId() {
         return id;

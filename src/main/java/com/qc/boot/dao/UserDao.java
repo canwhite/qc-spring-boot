@@ -12,12 +12,11 @@ import java.util.List;
  */
 //如果使用dao，dao就相当于一个viewModal层了，service层就是一个简单套接
 public interface UserDao {
-    User register(String email,String password,String name);
-    User getUserById(long id);
-    User getUserByEmail(String email);
-    List<User> getUesrs();
-    int updateUser(User user);
-
+    public User register(String email,String password,String name);
+    public User getUserById(long id);
+    public User getUserByEmail(String email);
+    public List<User> getUesrs(); 
+    public int updateUser(User user);
 }
 
 
