@@ -9,6 +9,8 @@ import com.qc.boot.service.UserService;
 // import io.micrometer.core.instrument.step.StepCounter;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
+import lombok.val;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,20 +59,15 @@ public class ApiController {
     /** --mp查，用get方法通过email查*/
     @GetMapping("/getUserByEmail")
     public User getUserByEmail(@RequestParam Map<String,Object> params){
-        System.out.println("params" + params);
-        //构造查询wrapper，查询对应数据
-        QueryWrapper<User> wrapper = new QueryWrapper<>();
-        //从params里拿到email,然后构造条件语句
         for (Map.Entry<String,Object> entry: params.entrySet()) {
             String key = entry.getKey();
             Object value = entry.getValue();
             /** 构造条件语句*/
             if(key.equals("email")){
-                wrapper.eq("email",value);
+                return userMappperService.getUserByEmail(value.toString());
             }
         }
-        //理论上我们只能查出来一个值
-        return usersMapper.selectOne(wrapper);
+        return null;
     }
 
     /** --mp增

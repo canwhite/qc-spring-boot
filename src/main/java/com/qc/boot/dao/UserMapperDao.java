@@ -32,7 +32,8 @@ public interface UserMapperDao {
     //signIn这个算作原子组合，不应该出现在Dao层，而应该出现在服务层
     //public User signin(String email,String password); 
     public User register(String email,String password,String name);
-    public User updateUser(User user);
+    public User updateUser(User user,String name);
     public void deleteUserByMap(Map<String,Object> map);
+    
 
 }

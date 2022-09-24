@@ -64,11 +64,11 @@ public class UserMapperDaoImpl implements UserMapperDao{
 
     /** 改： update*/
     @Override
-    public User updateUser(User user) {
+    public User updateUser(User user,String name) {
         //update
         UpdateWrapper<User> updateWrapper = new UpdateWrapper<>();
         updateWrapper.eq("email", user.getEmail());
-        user.setName("zack");
+        user.setName(name);
         int num =  usersMapper.update(user, updateWrapper);
         if(num != 1){
             throw  new RuntimeException("update error");
