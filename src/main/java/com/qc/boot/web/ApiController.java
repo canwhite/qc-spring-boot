@@ -36,11 +36,11 @@ import java.util.Map;
 public class ApiController {
 
     
-    @Autowired
-    UserService userService;
+    // @Autowired
+    // UserService userService;
 
-    @Autowired
-    private UsersMapper usersMapper;
+    // @Autowired
+    // private UsersMapper usersMapper;
 
     /* 基于dao重新封装了一层，慢慢替换上边的mapper */
     @Autowired
@@ -75,7 +75,7 @@ public class ApiController {
      * formData和json传过来的值可以用@RequestBody处理
      * */
     @PostMapping("/register")
-    public Map<String, String> register(@RequestParam Map<String, String> params){
+    public Map<String, Object> register(@RequestParam Map<String, String> params){
         //尝试一下
         String email ="";
         String password = "";
@@ -96,95 +96,30 @@ public class ApiController {
                 name = value;
             }
         }
-
-        //通过insert新增用户，然后一通设置
-        User user = new User();
-        user.setEmail(email);
-        user.setPassword(password);
-        user.setName(name);
-        user.setCreatedAt(System.currentTimeMillis());
-
-        int insert =  usersMapper.insert(user);
-        if(insert != 1){
-            throw new RuntimeException("register failed");
-        }
-        //Map.of or List.of("apple", "pear", "banana");
-        return  Map.of("email",email,"name",name);
+        User user =  userMappperService.rigister(email, password, name);
+        return  Map.of("user",user);
     }
 
     /** 删，根据email拿到id去删除,直接根据id的不用写了*/
     @PostMapping("deleteUserByEmail")
     public Map<String, Object> deleteUserByEmail(@RequestParam Map<String,Object> params){
-        //先根据email查到对应id
-        /**
-        QueryWrapper<User> wrapper = new QueryWrapper<>();
-        //拿到Email比对获取，查询
-        for (Map.Entry<String,Object> entry:params.entrySet()
-             ) {
-            String key = entry.getKey();
-            Object value = entry.getValue();
-
-            if(key.equals("email")){
-                //将查询条件配置好
-                wrapper.eq("email",value);
-            }
-        }
-         User user =  usersMapper.selectOne(wrapper);
-         System.out.println("user" + user);
-         */
-
-        var num = usersMapper.deleteByMap(params);
-        // System.out.println("-----num-------"+num);
-        if(num != 1){
-            throw new RuntimeException("register failed");
-        }
+        userMappperService.deleteUserByMap(params);
         return Map.of("code",200,"msg","success");
-
     }
 
 
 
     /** 更新，通过email去更新，在这里可以试一下lambda */
     @GetMapping("/updateUser")
-    public User updateUser(@RequestParam Map<String,Object> params){
-        //
-        UpdateWrapper<User> updateWrapper = new UpdateWrapper<>();
-        List<User> users = usersMapper.selectByMap(params);//拿到users
-        // System.out.println("--users--"+users.size());
-        if(users.size() > 0){
-            //赋值
-            User user = users.get(0);
-            user.setName("zack");
-
-            //条件
-            for (Map.Entry<String,Object> entry: params.entrySet()
-                 ) {
-                String key = entry.getKey();
-                String value = entry.getValue().toString();
-                if(key.equals("email")){
-                    updateWrapper.eq("email",value);
-                }
-            }
-            
-            /**
-             * user.setName("zack123");
-             * usersMapper.updateById(user); //传入的是个对象
-             * */
-            /** 更新的时候需要加一个user*/
-
-            //var num =  usersMapper.updateById(user);
-            //上边加了wrapper
-            var num = usersMapper.update(user,updateWrapper);
-
-            if(num != 1){
-                throw  new RuntimeException("update error");
-            }
-            return  user;
+    public Map<String, Object> updateUser(@RequestParam Map<String,Object> params){
+        User user = userMappperService.getUserByMap(params);
+        if(user != null){
+            User nUser = userMappperService.updateUser(user, "zack");
+            return Map.of("user",nUser);
+        }else{
+            return Map.of("msg","update error");
         }
-        return  null;
     }
-
-
 
 
     /** 根据路径id去请求 */
@@ -195,22 +130,24 @@ public class ApiController {
     @Operation(summary = "Get specific user object by it's id.")
     @GetMapping("/users/{id}")
     public  User user(@Parameter(description = "id of the user.") @PathVariable("id") long id){
-        return  userService.getUserById(id);
+        return  userMappperService.getUserById(id);
     }
 
+    
+    /** 基于json去请求的
+     * curl ： 
+     * curl -H 'Content-Type:application/json'  -d '{"email":"886@qq.com","password":"715705qc"}' http://127.0.0.1:8080/api/signin
+     */
     @PostMapping("/signin")
     public Map<String,Object> signin(@RequestBody SignInRequest signInRequest){
         try{
-            User user = userService.signin(signInRequest.email,signInRequest.password);
+            // User user = userService.signin(signInRequest.email,signInRequest.password);
+            User user = userMappperService.login(signInRequest.email, signInRequest.password);
             return  Map.of("user",user);
         }catch (Exception e){
             return Map.of("error", "SIGNIN_FAILED", "message", e.getMessage());
         }
     }
-
-
-
-
 
     /**在动态类里放静态类可以，但是反过来不行
      * 动态类可以push静态类

@@ -85,4 +85,9 @@ public class UserMapperDaoImpl implements UserMapperDao{
         }
     }
 
+    @Override
+    public List<User> selectUserByMap(Map<String, Object> map) {
+        return usersMapper.selectByMap(map);
+    }
+
 }

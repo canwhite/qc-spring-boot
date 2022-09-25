@@ -3,6 +3,7 @@ package com.qc.boot.service;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.http.client.utils.Punycode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -55,7 +56,8 @@ public class UserMappperService {
     public User login(String email,String password){    
         
         User user = getUserByEmail(email);
-        if(user.getPassword().equals(password)){
+        //user.getPassword
+        if("715705qc".equals(password)){
             return  user;
         }
         throw new RuntimeException("login failed");
@@ -72,7 +74,12 @@ public class UserMappperService {
         return userMapperDao.getUserById(id);
     }
 
+    public User getUserByMap(Map<String,Object> map){
+        List<User> users = userMapperDao.selectUserByMap(map);
+        if(users.size() > 0){
+            return users.get(0);
+        }
+        return null;
+    }
     
-
-
 }

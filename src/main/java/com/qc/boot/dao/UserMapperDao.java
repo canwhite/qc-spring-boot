@@ -34,6 +34,6 @@ public interface UserMapperDao {
     public User register(String email,String password,String name);
     public User updateUser(User user,String name);
     public void deleteUserByMap(Map<String,Object> map);
+    public List<User> selectUserByMap(Map<String,Object>map);
     
-
 }
