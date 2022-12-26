@@ -1,6 +1,5 @@
 package com.qc.boot.mapper;
 
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.qc.boot.entity.User;
 import org.apache.ibatis.annotations.Mapper;

@@ -1,13 +1,9 @@
 package com.qc.boot.service;
-
 import java.util.List;
 import java.util.Map;
-
-import org.apache.http.client.utils.Punycode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
-
 import com.qc.boot.dao.UserMapperDao;
 import com.qc.boot.entity.User;
 

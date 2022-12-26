@@ -2,7 +2,6 @@ package com.qc.boot.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;

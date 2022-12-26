@@ -1,18 +1,11 @@
 package com.qc.boot.web;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.qc.boot.entity.User;
-import com.qc.boot.mapper.UsersMapper;
 import com.qc.boot.service.UserMappperService;
-import com.qc.boot.service.UserService;
 // import io.micrometer.core.instrument.step.StepCounter;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
-import lombok.val;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -46,7 +39,7 @@ public class ApiController {
     @Autowired
     UserMappperService userMappperService;
 
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+    // private final Logger logger = LoggerFactory.getLogger(getClass());
 
 
     /** --mp查 */
