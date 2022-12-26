@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
@@ -14,7 +14,7 @@ import com.qc.boot.entity.User;
 import com.qc.boot.mapper.UsersMapper;
 
 
-@Service
+@Repository
 public class UserMapperDaoImpl implements UserMapperDao{
     
     @Autowired
