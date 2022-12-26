@@ -1,11 +1,13 @@
 package com.qc.boot.service;
 
+import com.qc.boot.dao.impl.UserDaoImpl;
 import com.qc.boot.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -13,6 +15,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
@@ -36,11 +41,10 @@ public class UserService {
     @Autowired
     StorageConfiguration storageConfig;
 
+    @Autowired
+    UserDaoImpl userDao;
 
 
-    /** ORM把关系型的表数据映射为java对象
-     * 参数是要映射成的Entity
-     * */
     RowMapper<User> userRowMapper = new BeanPropertyRowMapper<>(User.class);
 
 
@@ -59,23 +63,19 @@ public class UserService {
     }
 
 
-
-
-
     /** 查  */
     public User getUserById(long id){
-        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE id = ?",new Object[] {id},userRowMapper);
+        return  userDao.getUserById(id);
     }
 
     public User getUserByEmail(String email){
-        return  jdbcTemplate.queryForObject("SELECT * FROM users WHERE email = ?",new Object[] {email},userRowMapper);
+        return  userDao.getUserByEmail(email);
     }
 
     //获取所有users
     public List<User> getUesrs(){
-        return  jdbcTemplate.query("SELECT * FROM users",userRowMapper);
+        return  userDao.getUesrs();
     }
-
 
     public User signin(String email,String password){
         logger.info("try login by {}...", email);
@@ -88,39 +88,8 @@ public class UserService {
 
     /** 增 */
     public User register(String email,String password,String name){
-        logger.info("try register by {}...", email);
-
-        User user = new User();
-        //然后一通设置
-        user.setEmail(email);
-        user.setPassword(password);
-        user.setName(name);
-        user.setCreatedAt(System.currentTimeMillis());
-
-        /** KeyHolder用来后边拿主键 */
-        KeyHolder holder = new GeneratedKeyHolder();
-        //看来是返回nums
-        if(1 != jdbcTemplate.update((conn)->{
-            /** prepareStatement
-             * 如果需要返回主键，需要加第二个参数Statement.RETURN_GENERATED_KEYS
-             * 占位符也是?
-             * */
-            var ps = conn.prepareStatement("INSERT INTO users(email,password,name,createdAt) VALUES(?,?,?,?)",
-                    Statement.RETURN_GENERATED_KEYS);
-            //set Object从1开始
-            ps.setObject(1, user.getEmail());
-            ps.setObject(2, user.getPassword());
-            ps.setObject(3, user.getName());
-            ps.setObject(4, user.getCreatedAt());
-            return ps;
-        },holder)){
-            throw new RuntimeException("Insert failed.");
-        }
-
-        user.setId(holder.getKey().longValue());
-        return user;
+        return  userDao.register(email,password,name);
     }
-
 
 
     /** 改和删 都是用的update，只是语句不同而已
@@ -129,9 +98,8 @@ public class UserService {
      * return nums
      * */
 
-
     public void updateUser(User user){
-        if(1 != jdbcTemplate.update("UPDATE users SET name = ? WHERE id=?", user.getName(), user.getId())){
+        if(1 != userDao.updateUser(user)){
             throw new RuntimeException("User not found by id");
         }
     }

@@ -1,17 +1,16 @@
 package com.qc.boot.web;
 
 import com.alibaba.fastjson.JSON;
-import com.qc.boot.config.annotation.RoutingWithSlave;
 import com.qc.boot.entity.User;
 import com.qc.boot.redis.RedisService;
-import com.qc.boot.service.StorageService;
+// import com.qc.boot.service.StorageService;
 import com.qc.boot.service.UserService;
-import lombok.extern.java.Log;
+// import lombok.extern.java.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
+// import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -104,6 +103,8 @@ public class UserController {
     @PostMapping("/register")
     public ModelAndView doRegister(@RequestParam("email") String email, @RequestParam("password") String password,
                                    @RequestParam("name") String name) {
+
+        logger.info("-------,{},{},{}",email,password,name);
         try {
             User user = userService.register(email, password, name);
             logger.info("user registered: {}", user.getEmail());
