@@ -10,10 +10,10 @@ spring:
   #禁用自动配置，因为这里有主从两个数据库，需要自己配置bean，这里模拟一下
   datasource:
     #注意这个springboot_db需要我们自己去创建相应的数据库
-    url: jdbc:mysql://127.0.0.1:3306/springboot_db?characterEncoding=UTF-8&useUnicode=true&useSSL=true&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/springboot_db?characterEncoding=UTF-8&useUnicode=true&useSSL=true&serverTimezone=UTC&connectTimeout=1000&socketTimeout=30000&allowMultiQueries=true
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
-    password: 715705@Qc123
+    password: xxx
     type: com.alibaba.druid.pool.DruidDataSource
     minIdle: 5
     maxActive: 10

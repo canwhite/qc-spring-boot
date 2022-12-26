@@ -1,6 +1,8 @@
 # Logs
 .idea
 .DS_Store
-app.log 
+app.log
+app.log.* 
 testdb.log
 target
+.vscode
