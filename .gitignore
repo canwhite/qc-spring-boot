@@ -3,3 +3,6 @@
 .DS_Store
 app.log 
 testdb.log
+target
+app.*
+test.*
