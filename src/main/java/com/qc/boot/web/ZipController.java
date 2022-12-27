@@ -30,7 +30,6 @@ public class ZipController {
      *  -X POST 
      *  -H "Content-Type: multipart/form-data" 
      *  -F "file=@/Users/zack/Desktop/package.zip" 
-     *  -F "description=This is a description of the package" 
      *  http://localhost:8080/zip/upload
      */
 
@@ -54,12 +53,6 @@ public class ZipController {
         };
     }
 
-
-
-
-    
-
-    
 
 
 
