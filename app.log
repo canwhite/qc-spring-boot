@@ -4394,3 +4394,1449 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 2022-12-27 13:05:53.729  INFO 72387 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-12-27 13:05:53.731  INFO 72387 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.325 seconds (JVM running for 744.083)
 2022-12-27 13:05:53.732  INFO 72387 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 13:06:25.158  INFO 72387 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 13:06:25.161  INFO 72387 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closing ...
+2022-12-27 13:06:25.162  INFO 72387 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closed
+2022-12-27 14:45:40.417  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74485 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:45:40.419  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:45:40.446  INFO 74485 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-27 14:45:40.446  INFO 74485 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-27 14:45:41.230  INFO 74485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:45:41.236  INFO 74485 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:45:41.236  INFO 74485 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:45:41.278  INFO 74485 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:45:41.278  INFO 74485 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 832 ms
+2022-12-27 14:45:41.287  INFO 74485 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:45:41.387  INFO 74485 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-12-27 14:45:41.416  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:45:41.416  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:45:41.416  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:45:41.913  INFO 74485 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:45:41.979  INFO 74485 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:45:42.358  INFO 74485 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:45:42.360  INFO 74485 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:45:42.386  INFO 74485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:45:42.394  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : Started Application in 7.254 seconds (JVM running for 7.522)
+2022-12-27 14:46:28.644  INFO 74485 --- [Thread-315] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:46:28.654  INFO 74485 --- [Thread-315] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-12-27 14:46:28.658  INFO 74485 --- [Thread-315] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-12-27 14:46:33.763  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74485 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:46:33.764  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:46:33.963  INFO 74485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:46:33.964  INFO 74485 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:46:33.964  INFO 74485 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:46:33.969  INFO 74485 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:46:33.969  INFO 74485 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 200 ms
+2022-12-27 14:46:33.972  INFO 74485 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:46:33.977  INFO 74485 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-12-27 14:46:33.985  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:46:33.985  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:46:33.985  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:46:34.047  INFO 74485 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:46:34.063  INFO 74485 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:46:34.261  INFO 74485 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:46:34.262  INFO 74485 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:46:34.270  INFO 74485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:46:34.273  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.563 seconds (JVM running for 59.4)
+2022-12-27 14:46:34.274  INFO 74485 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:46:39.975  INFO 74485 --- [Thread-318] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:46:39.978  INFO 74485 --- [Thread-318] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-12-27 14:46:39.981  INFO 74485 --- [Thread-318] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-12-27 14:46:45.059  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74485 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:46:45.060  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:46:45.208  INFO 74485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:46:45.208  INFO 74485 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:46:45.208  INFO 74485 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:46:45.214  INFO 74485 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:46:45.215  INFO 74485 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 152 ms
+2022-12-27 14:46:45.217  INFO 74485 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:46:45.221  INFO 74485 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-12-27 14:46:45.230  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:46:45.230  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:46:45.230  INFO 74485 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:46:45.290  INFO 74485 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:46:45.309  INFO 74485 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:46:45.416  INFO 74485 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:46:45.417  INFO 74485 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:46:45.423  INFO 74485 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:46:45.426  INFO 74485 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.403 seconds (JVM running for 70.553)
+2022-12-27 14:46:45.426  INFO 74485 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:47:09.312  INFO 74572 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74572 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:47:09.313  INFO 74572 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:47:09.338  INFO 74572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-27 14:47:09.338  INFO 74572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-27 14:47:10.052  INFO 74572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:47:10.057  INFO 74572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:47:10.057  INFO 74572 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:47:10.113  INFO 74572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:47:10.114  INFO 74572 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 776 ms
+2022-12-27 14:47:10.124  INFO 74572 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:47:10.218  INFO 74572 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-12-27 14:47:10.239  INFO 74572 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:47:10.240  INFO 74572 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:47:10.240  INFO 74572 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:47:10.695  INFO 74572 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:47:10.752  INFO 74572 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:47:11.159  WARN 74572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-12-27 14:47:11.160  INFO 74572 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:47:11.176  WARN 74572 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2022-12-27 14:47:11.176  WARN 74572 --- [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'tomcatMetricsBinder': java.lang.NullPointerException
+2022-12-27 14:47:11.177  INFO 74572 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:47:11.183  INFO 74572 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-12-27 14:47:11.187  INFO 74572 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-12-27 14:47:11.189  INFO 74572 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-27 14:47:11.204  INFO 74572 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-27 14:47:11.205 ERROR 74572 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2022-12-27 14:47:24.890  INFO 74485 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:47:24.895  INFO 74485 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2022-12-27 14:47:24.897  INFO 74485 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2022-12-27 14:47:33.927  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:47:33.928  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:47:33.953  INFO 74610 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-12-27 14:47:33.953  INFO 74610 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-12-27 14:47:34.594  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:47:34.599  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:47:34.599  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:47:34.647  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:47:34.647  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 694 ms
+2022-12-27 14:47:34.658  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:47:34.748  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-12-27 14:47:34.773  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:47:34.774  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:47:34.774  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:47:35.183  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:47:35.241  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:47:35.642  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:47:35.644  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:47:35.678  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:47:35.686  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 7.006 seconds (JVM running for 7.24)
+2022-12-27 14:48:44.231  INFO 74610 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-27 14:48:44.232  INFO 74610 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-27 14:48:44.243  INFO 74610 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2022-12-27 14:48:44.264 ERROR 74610 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
+
+org.springframework.web.multipart.MultipartException: Current request is not a multipart request
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:114)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.qc.boot.filter.AuthFilterRegistrationBean$AuthFilter.doFilter(AuthFilterRegistrationBean.java:56)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:747)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+2022-12-27 14:51:15.134  WARN 74610 --- [http-nio-8080-exec-2] org.apache.catalina.connector.Request    : Creating the temporary upload location [/private/var/folders/hw/mvzqgrvx7tgcskndzyys11080000gn/T/tomcat.16582138914495185728.8080/work/Tomcat/localhost/ROOT/./upload] as it is required by the servlet [dispatcherServlet]
+2022-12-27 14:52:02.621  INFO 74610 --- [Thread-315] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:02.637  INFO 74610 --- [Thread-315] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-12-27 14:52:02.652  INFO 74610 --- [Thread-315] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-12-27 14:52:07.737  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:52:07.738  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:52:07.918  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:52:07.918  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:52:07.918  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:52:07.926  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:52:07.926  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 187 ms
+2022-12-27 14:52:07.929  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:52:07.933  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-12-27 14:52:07.947  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:52:07.947  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:52:07.947  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:52:08.020  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:52:08.042  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:08.263  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:52:08.264  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:52:08.271  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:52:08.275  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.562 seconds (JVM running for 279.826)
+2022-12-27 14:52:08.276  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:52:30.165  INFO 74610 --- [Thread-318] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:30.169  INFO 74610 --- [Thread-318] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-12-27 14:52:30.171  INFO 74610 --- [Thread-318] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-12-27 14:52:35.241  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:52:35.241  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:52:35.389  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:52:35.390  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:52:35.390  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:52:35.397  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:52:35.398  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 154 ms
+2022-12-27 14:52:35.401  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:52:35.410  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-12-27 14:52:35.418  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:52:35.419  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:52:35.419  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:52:35.494  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:52:35.510  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:35.642  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:52:35.644  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:52:35.651  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:52:35.657  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.45 seconds (JVM running for 307.208)
+2022-12-27 14:52:35.658  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:52:48.430  INFO 74610 --- [Thread-633] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:48.432  INFO 74610 --- [Thread-633] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2022-12-27 14:52:48.433  INFO 74610 --- [Thread-633] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2022-12-27 14:52:53.486  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:52:53.487  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:52:53.611  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:52:53.612  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:52:53.612  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:52:53.617  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:52:53.617  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 129 ms
+2022-12-27 14:52:53.619  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:52:53.626  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2022-12-27 14:52:53.633  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:52:53.633  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:52:53.633  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:52:53.689  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:52:53.709  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:53.856  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:52:53.856  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:52:53.862  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:52:53.865  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.402 seconds (JVM running for 325.416)
+2022-12-27 14:52:53.865  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:52:57.541  INFO 74610 --- [Thread-948] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:57.542  INFO 74610 --- [Thread-948] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closing ...
+2022-12-27 14:52:57.543  INFO 74610 --- [Thread-948] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2022-12-27 14:52:57.586  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:52:57.586  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:52:57.720  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:52:57.720  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:52:57.720  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:52:57.728  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:52:57.728  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 139 ms
+2022-12-27 14:52:57.733  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:52:57.737  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2022-12-27 14:52:57.743  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:52:57.743  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:52:57.743  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:52:57.792  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:52:57.805  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:52:57.940  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:52:57.941  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:52:57.947  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:52:57.950  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.375 seconds (JVM running for 329.501)
+2022-12-27 14:52:57.951  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:53:05.660  INFO 74610 --- [Thread-1263] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:53:05.666  INFO 74610 --- [Thread-1263] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closing ...
+2022-12-27 14:53:05.667  INFO 74610 --- [Thread-1263] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2022-12-27 14:53:10.752  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:53:10.752  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:53:10.883  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:53:10.884  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:53:10.884  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:53:10.888  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:53:10.888  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 133 ms
+2022-12-27 14:53:10.891  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:53:10.897  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2022-12-27 14:53:10.912  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:53:10.912  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:53:10.912  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:53:10.979  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:53:10.991  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:53:11.094  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:53:11.095  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:53:11.100  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:53:11.102  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.38 seconds (JVM running for 342.653)
+2022-12-27 14:53:11.103  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:53:19.811  INFO 74610 --- [Thread-1578] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:53:19.814  INFO 74610 --- [Thread-1578] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closing ...
+2022-12-27 14:53:19.815  INFO 74610 --- [Thread-1578] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2022-12-27 14:53:24.914  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:53:24.915  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:53:25.100  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:53:25.100  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:53:25.100  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:53:25.104  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:53:25.104  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 187 ms
+2022-12-27 14:53:25.108  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:53:25.113  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2022-12-27 14:53:25.118  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:53:25.118  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:53:25.119  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:53:25.180  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:53:25.195  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:53:25.287  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:53:25.288  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:53:25.292  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:53:25.295  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.403 seconds (JVM running for 356.846)
+2022-12-27 14:53:25.295  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:54:16.456  INFO 74610 --- [Thread-1893] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:54:16.461  INFO 74610 --- [Thread-1893] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closing ...
+2022-12-27 14:54:16.463  INFO 74610 --- [Thread-1893] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2022-12-27 14:54:21.562  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:54:21.562  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:54:21.743  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:54:21.744  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:54:21.744  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:54:21.748  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:54:21.748  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 184 ms
+2022-12-27 14:54:21.750  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:54:21.754  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2022-12-27 14:54:21.759  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:54:21.759  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:54:21.759  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:54:21.807  WARN 74610 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.qc.boot.service.ZipService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@67a94389]
+2022-12-27 14:54:21.810  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closing ...
+2022-12-27 14:54:21.811  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} closed
+2022-12-27 14:54:21.811  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-27 14:54:21.815  INFO 74610 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-27 14:54:21.815 ERROR 74610 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.qc.boot.service.ZipService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@67a94389]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1201)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.qc.boot.service.ZipService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@67a94389]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: MultipartFile
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: MultipartFile
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 30 common frames omitted
+
+2022-12-27 14:54:21.816  WARN 74610 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationAvailability' defined in class path resource [org/springframework/boot/autoconfigure/availability/ApplicationAvailabilityAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 45 common frames omitted
+
+2022-12-27 14:54:25.270  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:54:25.270  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:54:25.384  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:54:25.384  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:54:25.385  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:54:25.389  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:54:25.389  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 118 ms
+2022-12-27 14:54:25.391  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:54:25.395  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} inited
+2022-12-27 14:54:25.400  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:54:25.400  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:54:25.400  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:54:25.446  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:54:25.463  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:54:25.543  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:54:25.544  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:54:25.548  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:54:25.550  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.294 seconds (JVM running for 417.101)
+2022-12-27 14:54:25.551  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:54:29.228  INFO 74610 --- [Thread-2208] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:54:29.231  INFO 74610 --- [Thread-2208] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closing ...
+2022-12-27 14:54:29.231  INFO 74610 --- [Thread-2208] com.alibaba.druid.pool.DruidDataSource   : {dataSource-9} closed
+2022-12-27 14:54:34.320  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:54:34.320  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:54:34.453  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:54:34.453  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:54:34.454  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:54:34.457  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:54:34.457  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 133 ms
+2022-12-27 14:54:34.460  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:54:34.464  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} inited
+2022-12-27 14:54:34.469  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:54:34.469  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:54:34.469  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:54:34.522  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:54:34.538  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:54:34.597  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:54:34.598  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:54:34.602  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:54:34.604  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.31 seconds (JVM running for 426.155)
+2022-12-27 14:54:34.605  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:55:06.594  INFO 74610 --- [Thread-2836] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:06.599  INFO 74610 --- [Thread-2836] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closing ...
+2022-12-27 14:55:06.600  INFO 74610 --- [Thread-2836] com.alibaba.druid.pool.DruidDataSource   : {dataSource-10} closed
+2022-12-27 14:55:11.698  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:55:11.698  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:55:11.827  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:55:11.828  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:55:11.828  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:55:11.836  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:55:11.836  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 134 ms
+2022-12-27 14:55:11.839  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:55:11.847  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} inited
+2022-12-27 14:55:11.854  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:55:11.854  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:55:11.854  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:55:11.922  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:55:11.934  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:12.011  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:55:12.012  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:55:12.016  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:55:12.018  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.35 seconds (JVM running for 463.569)
+2022-12-27 14:55:12.019  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:55:17.697  INFO 74610 --- [Thread-3151] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:17.699  INFO 74610 --- [Thread-3151] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closing ...
+2022-12-27 14:55:17.700  INFO 74610 --- [Thread-3151] com.alibaba.druid.pool.DruidDataSource   : {dataSource-11} closed
+2022-12-27 14:55:22.778  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:55:22.778  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:55:22.899  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:55:22.899  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:55:22.899  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:55:22.904  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:55:22.904  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 124 ms
+2022-12-27 14:55:22.906  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:55:22.912  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} inited
+2022-12-27 14:55:22.917  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:55:22.918  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:55:22.918  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:55:22.966  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:55:22.977  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:23.068  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:55:23.069  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:55:23.074  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:55:23.079  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.321 seconds (JVM running for 474.629)
+2022-12-27 14:55:23.079  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:55:27.750  INFO 74610 --- [Thread-3466] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:27.753  INFO 74610 --- [Thread-3466] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closing ...
+2022-12-27 14:55:27.754  INFO 74610 --- [Thread-3466] com.alibaba.druid.pool.DruidDataSource   : {dataSource-12} closed
+2022-12-27 14:55:32.814  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:55:32.814  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:55:32.973  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:55:32.974  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:55:32.974  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:55:32.978  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:55:32.978  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 163 ms
+2022-12-27 14:55:32.981  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:55:32.985  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} inited
+2022-12-27 14:55:32.991  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:55:32.991  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:55:32.991  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:55:33.050  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:55:33.060  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:33.160  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:55:33.161  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:55:33.164  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:55:33.167  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.364 seconds (JVM running for 484.717)
+2022-12-27 14:55:33.167  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:55:47.970  INFO 74610 --- [Thread-3781] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:47.982  INFO 74610 --- [Thread-3781] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closing ...
+2022-12-27 14:55:47.983  INFO 74610 --- [Thread-3781] com.alibaba.druid.pool.DruidDataSource   : {dataSource-13} closed
+2022-12-27 14:55:53.103  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:55:53.103  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:55:53.280  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:55:53.280  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:55:53.280  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:55:53.284  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:55:53.284  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 178 ms
+2022-12-27 14:55:53.286  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:55:53.289  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} inited
+2022-12-27 14:55:53.295  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:55:53.295  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:55:53.295  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:55:53.340  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:55:53.350  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:55:53.444  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:55:53.444  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:55:53.448  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:55:53.450  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.393 seconds (JVM running for 505.0)
+2022-12-27 14:55:53.451  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:56:11.274  INFO 74610 --- [Thread-4096] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:56:11.279  INFO 74610 --- [Thread-4096] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} closing ...
+2022-12-27 14:56:11.286  INFO 74610 --- [Thread-4096] com.alibaba.druid.pool.DruidDataSource   : {dataSource-14} closed
+2022-12-27 14:56:16.389  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:56:16.389  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:56:16.535  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:56:16.535  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:56:16.535  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:56:16.539  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:56:16.539  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 148 ms
+2022-12-27 14:56:16.541  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:56:16.545  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} inited
+2022-12-27 14:56:16.551  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:56:16.551  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:56:16.551  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:56:16.599  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:56:16.610  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:56:16.716  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:56:16.716  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:56:16.720  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:56:16.722  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.35 seconds (JVM running for 528.272)
+2022-12-27 14:56:16.723  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:56:25.833  INFO 74610 --- [Thread-4411] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:56:25.839  INFO 74610 --- [Thread-4411] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} closing ...
+2022-12-27 14:56:25.843  INFO 74610 --- [Thread-4411] com.alibaba.druid.pool.DruidDataSource   : {dataSource-15} closed
+2022-12-27 14:56:30.938  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:56:30.939  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:56:31.120  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:56:31.120  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:56:31.120  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:56:31.127  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:56:31.127  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 187 ms
+2022-12-27 14:56:31.132  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:56:31.137  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} inited
+2022-12-27 14:56:31.143  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:56:31.144  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:56:31.144  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:56:31.199  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:56:31.219  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:56:31.308  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:56:31.309  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:56:31.314  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:56:31.316  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.399 seconds (JVM running for 542.865)
+2022-12-27 14:56:31.316  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:56:45.072  INFO 74610 --- [Thread-4726] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:56:45.077  INFO 74610 --- [Thread-4726] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} closing ...
+2022-12-27 14:56:45.079  INFO 74610 --- [Thread-4726] com.alibaba.druid.pool.DruidDataSource   : {dataSource-16} closed
+2022-12-27 14:56:50.170  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:56:50.170  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:56:50.309  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:56:50.310  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:56:50.310  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:56:50.316  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:56:50.316  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 144 ms
+2022-12-27 14:56:50.320  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:56:50.325  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} inited
+2022-12-27 14:56:50.331  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:56:50.331  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:56:50.331  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:56:50.384  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:56:50.407  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:56:50.525  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:56:50.526  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:56:50.530  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:56:50.533  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.38 seconds (JVM running for 562.082)
+2022-12-27 14:56:50.533  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:56:57.630  INFO 74610 --- [Thread-5041] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:56:57.633  INFO 74610 --- [Thread-5041] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} closing ...
+2022-12-27 14:56:57.635  INFO 74610 --- [Thread-5041] com.alibaba.druid.pool.DruidDataSource   : {dataSource-17} closed
+2022-12-27 14:57:02.756  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:57:02.756  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:57:02.891  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:57:02.892  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:57:02.892  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:57:02.897  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:57:02.897  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 139 ms
+2022-12-27 14:57:02.899  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:57:02.902  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18} inited
+2022-12-27 14:57:02.906  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:57:02.906  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:57:02.907  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:57:02.949  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:57:02.965  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:03.065  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:57:03.066  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:57:03.070  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:57:03.073  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.334 seconds (JVM running for 574.622)
+2022-12-27 14:57:03.073  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:57:20.903  INFO 74610 --- [Thread-5356] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:20.906  INFO 74610 --- [Thread-5356] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18} closing ...
+2022-12-27 14:57:20.907  INFO 74610 --- [Thread-5356] com.alibaba.druid.pool.DruidDataSource   : {dataSource-18} closed
+2022-12-27 14:57:25.967  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:57:25.967  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:57:26.107  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:57:26.107  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:57:26.107  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:57:26.112  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:57:26.112  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 144 ms
+2022-12-27 14:57:26.114  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:57:26.119  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19} inited
+2022-12-27 14:57:26.124  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:57:26.124  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:57:26.124  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:57:26.185  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:57:26.199  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:26.308  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:57:26.309  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:57:26.315  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:57:26.317  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.361 seconds (JVM running for 597.866)
+2022-12-27 14:57:26.318  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:57:38.478  INFO 74610 --- [Thread-5671] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:38.479  INFO 74610 --- [Thread-5671] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19} closing ...
+2022-12-27 14:57:38.480  INFO 74610 --- [Thread-5671] com.alibaba.druid.pool.DruidDataSource   : {dataSource-19} closed
+2022-12-27 14:57:43.585  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:57:43.586  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:57:43.747  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:57:43.748  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:57:43.748  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:57:43.752  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:57:43.752  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 164 ms
+2022-12-27 14:57:43.755  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:57:43.758  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-20} inited
+2022-12-27 14:57:43.765  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:57:43.765  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:57:43.765  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:57:43.816  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:57:43.831  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:43.900  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:57:43.902  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:57:43.907  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:57:43.909  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.348 seconds (JVM running for 615.458)
+2022-12-27 14:57:43.910  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:57:47.579  INFO 74610 --- [Thread-5986] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:47.584  INFO 74610 --- [Thread-5986] com.alibaba.druid.pool.DruidDataSource   : {dataSource-20} closing ...
+2022-12-27 14:57:47.586  INFO 74610 --- [Thread-5986] com.alibaba.druid.pool.DruidDataSource   : {dataSource-20} closed
+2022-12-27 14:57:47.662  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:57:47.662  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:57:47.747  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:57:47.747  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:57:47.747  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:57:47.752  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:57:47.752  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 89 ms
+2022-12-27 14:57:47.754  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:57:47.757  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-21} inited
+2022-12-27 14:57:47.762  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:57:47.762  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:57:47.762  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:57:47.807  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:57:47.817  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:47.866  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:57:47.867  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:57:47.871  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:57:47.873  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.219 seconds (JVM running for 619.422)
+2022-12-27 14:57:47.873  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:57:52.557  INFO 74610 --- [Thread-6301] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:52.559  INFO 74610 --- [Thread-6301] com.alibaba.druid.pool.DruidDataSource   : {dataSource-21} closing ...
+2022-12-27 14:57:52.560  INFO 74610 --- [Thread-6301] com.alibaba.druid.pool.DruidDataSource   : {dataSource-21} closed
+2022-12-27 14:57:57.681  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:57:57.681  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:57:57.797  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:57:57.797  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:57:57.797  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:57:57.801  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:57:57.801  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 117 ms
+2022-12-27 14:57:57.804  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:57:57.809  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-22} inited
+2022-12-27 14:57:57.814  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:57:57.815  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:57:57.815  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:57:57.864  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:57:57.874  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:57:57.936  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:57:57.937  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:57:57.941  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:57:57.947  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.291 seconds (JVM running for 629.496)
+2022-12-27 14:57:57.947  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 14:58:20.838  INFO 74610 --- [Thread-6616] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:58:20.849  INFO 74610 --- [Thread-6616] com.alibaba.druid.pool.DruidDataSource   : {dataSource-22} closing ...
+2022-12-27 14:58:20.855  INFO 74610 --- [Thread-6616] com.alibaba.druid.pool.DruidDataSource   : {dataSource-22} closed
+2022-12-27 14:58:26.131  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 14:58:26.131  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 14:58:26.298  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 14:58:26.299  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 14:58:26.299  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 14:58:26.312  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 14:58:26.312  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 178 ms
+2022-12-27 14:58:26.315  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 14:58:26.318  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-23} inited
+2022-12-27 14:58:26.326  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 14:58:26.326  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 14:58:26.326  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 14:58:26.379  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 14:58:26.392  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 14:58:26.486  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 14:58:26.486  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 14:58:26.492  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 14:58:26.495  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.408 seconds (JVM running for 658.044)
+2022-12-27 14:58:26.495  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:14:09.354  INFO 74610 --- [Thread-6931] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:14:09.360  INFO 74610 --- [Thread-6931] com.alibaba.druid.pool.DruidDataSource   : {dataSource-23} closing ...
+2022-12-27 15:14:09.371  INFO 74610 --- [Thread-6931] com.alibaba.druid.pool.DruidDataSource   : {dataSource-23} closed
+2022-12-27 15:14:14.536  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:14:14.538  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:14:14.664  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:14:14.669  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:14:14.669  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:14:14.674  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:14:14.674  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 133 ms
+2022-12-27 15:14:14.677  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:14:14.680  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-24} inited
+2022-12-27 15:14:14.686  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:14:14.686  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:14:14.686  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:14:14.742  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:14:14.754  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:14:14.811  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:14:14.812  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:14:14.816  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:14:14.818  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.311 seconds (JVM running for 1184.168)
+2022-12-27 15:14:14.818  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:16:12.734  INFO 74610 --- [Thread-7246] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:16:12.744  INFO 74610 --- [Thread-7246] com.alibaba.druid.pool.DruidDataSource   : {dataSource-24} closing ...
+2022-12-27 15:16:12.747  INFO 74610 --- [Thread-7246] com.alibaba.druid.pool.DruidDataSource   : {dataSource-24} closed
+2022-12-27 15:16:17.881  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:16:17.882  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:16:17.996  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:16:17.996  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:16:17.996  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:16:18.000  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:16:18.000  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 117 ms
+2022-12-27 15:16:18.008  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:16:18.012  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-25} inited
+2022-12-27 15:16:18.016  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:16:18.016  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:16:18.016  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:16:18.076  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:16:18.092  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:16:18.153  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:16:18.154  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:16:18.158  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:16:18.161  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.29 seconds (JVM running for 1307.509)
+2022-12-27 15:16:18.161  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:16:40.432  INFO 74610 --- [Thread-7561] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:16:40.435  INFO 74610 --- [Thread-7561] com.alibaba.druid.pool.DruidDataSource   : {dataSource-25} closing ...
+2022-12-27 15:16:40.436  INFO 74610 --- [Thread-7561] com.alibaba.druid.pool.DruidDataSource   : {dataSource-25} closed
+2022-12-27 15:16:45.525  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:16:45.525  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:16:45.658  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:16:45.658  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:16:45.658  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:16:45.662  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:16:45.662  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 136 ms
+2022-12-27 15:16:45.664  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:16:45.670  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-26} inited
+2022-12-27 15:16:45.675  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:16:45.675  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:16:45.675  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:16:45.721  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:16:45.732  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:16:45.809  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:16:45.809  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:16:45.814  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:16:45.816  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.303 seconds (JVM running for 1335.165)
+2022-12-27 15:16:45.817  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:16:49.502  INFO 74610 --- [Thread-7876] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:16:49.506  INFO 74610 --- [Thread-7876] com.alibaba.druid.pool.DruidDataSource   : {dataSource-26} closing ...
+2022-12-27 15:16:49.507  INFO 74610 --- [Thread-7876] com.alibaba.druid.pool.DruidDataSource   : {dataSource-26} closed
+2022-12-27 15:16:49.641  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:16:49.641  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:16:49.776  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:16:49.778  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:16:49.778  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:16:49.788  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:16:49.788  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 145 ms
+2022-12-27 15:16:49.794  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:16:49.798  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-27} inited
+2022-12-27 15:16:49.803  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:16:49.803  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:16:49.804  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:16:49.852  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:16:49.864  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:16:49.946  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:16:49.948  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:16:49.957  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:16:49.960  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.33 seconds (JVM running for 1339.308)
+2022-12-27 15:16:49.960  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:17:01.716  INFO 74610 --- [Thread-8191] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:01.719  INFO 74610 --- [Thread-8191] com.alibaba.druid.pool.DruidDataSource   : {dataSource-27} closing ...
+2022-12-27 15:17:01.720  INFO 74610 --- [Thread-8191] com.alibaba.druid.pool.DruidDataSource   : {dataSource-27} closed
+2022-12-27 15:17:06.816  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:17:06.816  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:17:06.968  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:17:06.969  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:17:06.969  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:17:06.973  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:17:06.973  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 156 ms
+2022-12-27 15:17:06.976  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:17:06.979  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-28} inited
+2022-12-27 15:17:06.997  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:17:06.997  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:17:06.997  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:17:07.067  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:17:07.078  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:07.143  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:17:07.143  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:17:07.147  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:17:07.149  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.348 seconds (JVM running for 1356.498)
+2022-12-27 15:17:07.150  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:17:09.802  INFO 74610 --- [Thread-8506] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:09.804  INFO 74610 --- [Thread-8506] com.alibaba.druid.pool.DruidDataSource   : {dataSource-28} closing ...
+2022-12-27 15:17:09.805  INFO 74610 --- [Thread-8506] com.alibaba.druid.pool.DruidDataSource   : {dataSource-28} closed
+2022-12-27 15:17:09.875  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:17:09.875  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:17:09.962  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:17:09.963  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:17:09.963  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:17:09.966  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:17:09.966  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 90 ms
+2022-12-27 15:17:09.975  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:17:09.979  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-29} inited
+2022-12-27 15:17:09.983  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:17:09.983  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:17:09.983  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:17:10.027  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:17:10.039  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:10.148  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:17:10.149  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:17:10.160  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:17:10.162  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.294 seconds (JVM running for 1359.51)
+2022-12-27 15:17:10.162  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:17:15.853  INFO 74610 --- [Thread-8821] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:15.856  INFO 74610 --- [Thread-8821] com.alibaba.druid.pool.DruidDataSource   : {dataSource-29} closing ...
+2022-12-27 15:17:15.858  INFO 74610 --- [Thread-8821] com.alibaba.druid.pool.DruidDataSource   : {dataSource-29} closed
+2022-12-27 15:17:20.946  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:17:20.946  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:17:21.056  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:17:21.057  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:17:21.057  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:17:21.062  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:17:21.062  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 115 ms
+2022-12-27 15:17:21.064  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:17:21.073  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-30} inited
+2022-12-27 15:17:21.079  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:17:21.079  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:17:21.079  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:17:21.133  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:17:21.144  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:21.216  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:17:21.219  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:17:21.225  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:17:21.227  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.296 seconds (JVM running for 1370.575)
+2022-12-27 15:17:21.228  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:17:24.881  INFO 74610 --- [Thread-9136] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:24.884  INFO 74610 --- [Thread-9136] com.alibaba.druid.pool.DruidDataSource   : {dataSource-30} closing ...
+2022-12-27 15:17:24.885  INFO 74610 --- [Thread-9136] com.alibaba.druid.pool.DruidDataSource   : {dataSource-30} closed
+2022-12-27 15:17:24.960  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:17:24.960  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:17:25.090  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:17:25.091  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:17:25.091  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:17:25.095  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:17:25.095  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 134 ms
+2022-12-27 15:17:25.102  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:17:25.109  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-31} inited
+2022-12-27 15:17:25.114  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:17:25.114  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:17:25.114  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:17:25.157  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:17:25.165  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:17:25.223  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:17:25.224  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:17:25.229  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:17:25.231  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.278 seconds (JVM running for 1374.579)
+2022-12-27 15:17:25.232  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:18:01.268  INFO 74610 --- [Thread-9451] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:18:01.273  INFO 74610 --- [Thread-9451] com.alibaba.druid.pool.DruidDataSource   : {dataSource-31} closing ...
+2022-12-27 15:18:01.278  INFO 74610 --- [Thread-9451] com.alibaba.druid.pool.DruidDataSource   : {dataSource-31} closed
+2022-12-27 15:18:06.425  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:18:06.425  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:18:06.554  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:18:06.554  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:18:06.554  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:18:06.559  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:18:06.559  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 132 ms
+2022-12-27 15:18:06.561  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:18:06.564  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-32} inited
+2022-12-27 15:18:06.569  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:18:06.569  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:18:06.569  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:18:06.625  WARN 74610 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService' defined in file [/Users/zack/Desktop/qc-spring-boot/target/classes/com/qc/boot/service/ZipService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from Log to Logger
+
+2022-12-27 15:18:06.627  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-32} closing ...
+2022-12-27 15:18:06.628  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-32} closed
+2022-12-27 15:18:06.628  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-27 15:18:06.631  INFO 74610 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-27 15:18:06.631 ERROR 74610 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService' defined in file [/Users/zack/Desktop/qc-spring-boot/target/classes/com/qc/boot/service/ZipService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from Log to Logger
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from Log to Logger
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from Log to Logger
+
+	at com.qc.boot.service.ZipService.<init>(ZipService.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 25 common frames omitted
+
+2022-12-27 15:18:06.636  WARN 74610 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationAvailability' defined in class path resource [org/springframework/boot/autoconfigure/availability/ApplicationAvailabilityAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 45 common frames omitted
+
+2022-12-27 15:18:24.218  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:18:24.219  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:18:24.381  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:18:24.382  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:18:24.382  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:18:24.387  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:18:24.387  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 165 ms
+2022-12-27 15:18:24.390  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:18:24.393  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-33} inited
+2022-12-27 15:18:24.398  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:18:24.398  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:18:24.398  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:18:24.450  WARN 74610 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService' defined in file [/Users/zack/Desktop/qc-spring-boot/target/classes/com/qc/boot/service/ZipService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+2022-12-27 15:18:24.453  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-33} closing ...
+2022-12-27 15:18:24.454  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-33} closed
+2022-12-27 15:18:24.455  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-27 15:18:24.460  INFO 74610 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-27 15:18:24.470 ERROR 74610 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService' defined in file [/Users/zack/Desktop/qc-spring-boot/target/classes/com/qc/boot/service/ZipService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	LoggerFactory cannot be resolved
+
+	at com.qc.boot.service.ZipService.<init>(ZipService.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 25 common frames omitted
+
+2022-12-27 15:18:24.471  WARN 74610 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationAvailability' defined in class path resource [org/springframework/boot/autoconfigure/availability/ApplicationAvailabilityAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 45 common frames omitted
+
+2022-12-27 15:18:35.963  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:18:35.964  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:18:36.098  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:18:36.098  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:18:36.098  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:18:36.103  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:18:36.103  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 138 ms
+2022-12-27 15:18:36.105  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:18:36.108  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-34} inited
+2022-12-27 15:18:36.112  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:18:36.112  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:18:36.112  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:18:36.178  WARN 74610 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService' defined in file [/Users/zack/Desktop/qc-spring-boot/target/classes/com/qc/boot/service/ZipService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Logger cannot be resolved to a type
+
+2022-12-27 15:18:36.179  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-34} closing ...
+2022-12-27 15:18:36.182  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-34} closed
+2022-12-27 15:18:36.182  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-12-27 15:18:36.185  INFO 74610 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-27 15:18:36.186 ERROR 74610 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zipService' defined in file [/Users/zack/Desktop/qc-spring-boot/target/classes/com/qc/boot/service/ZipService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Logger cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.qc.boot.service.ZipService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Logger cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Logger cannot be resolved to a type
+
+	at com.qc.boot.service.ZipService.<init>(ZipService.java:15)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 25 common frames omitted
+
+2022-12-27 15:18:36.187  WARN 74610 --- [restartedMain] o.s.boot.SpringApplication               : Unable to close ApplicationContext
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationAvailability' defined in class path resource [org/springframework/boot/autoconfigure/availability/ApplicationAvailabilityAutoConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.qc.boot.Application.main(Application.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 23 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 45 common frames omitted
+
+2022-12-27 15:18:39.650  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:18:39.650  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:18:39.757  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:18:39.757  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:18:39.757  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:18:39.761  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:18:39.761  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 109 ms
+2022-12-27 15:18:39.763  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:18:39.767  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-35} inited
+2022-12-27 15:18:39.773  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:18:39.773  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:18:39.773  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:18:39.844  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:18:39.857  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:18:39.923  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:18:39.924  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:18:39.928  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:18:39.930  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 0.301 seconds (JVM running for 1449.277)
+2022-12-27 15:18:39.930  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:18:43.608  INFO 74610 --- [Thread-9766] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:18:43.611  INFO 74610 --- [Thread-9766] com.alibaba.druid.pool.DruidDataSource   : {dataSource-35} closing ...
+2022-12-27 15:18:43.611  INFO 74610 --- [Thread-9766] com.alibaba.druid.pool.DruidDataSource   : {dataSource-35} closed
+2022-12-27 15:18:48.715  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:18:48.715  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:18:48.854  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:18:48.855  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:18:48.855  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:18:48.866  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:18:48.866  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 149 ms
+2022-12-27 15:18:48.868  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:18:48.872  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-36} inited
+2022-12-27 15:18:48.882  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:18:48.882  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:18:48.882  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:18:48.942  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:18:48.954  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:18:49.026  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:18:49.026  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:18:49.031  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:18:49.033  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.343 seconds (JVM running for 1458.38)
+2022-12-27 15:18:49.033  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:19:11.882  INFO 74610 --- [Thread-11020] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:19:11.886  INFO 74610 --- [Thread-11020] com.alibaba.druid.pool.DruidDataSource   : {dataSource-36} closing ...
+2022-12-27 15:19:11.888  INFO 74610 --- [Thread-11020] com.alibaba.druid.pool.DruidDataSource   : {dataSource-36} closed
+2022-12-27 15:19:17.034  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:19:17.034  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:19:17.148  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:19:17.149  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:19:17.149  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:19:17.153  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:19:17.153  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 118 ms
+2022-12-27 15:19:17.161  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:19:17.166  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-37} inited
+2022-12-27 15:19:17.174  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:19:17.174  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:19:17.174  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:19:17.232  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:19:17.241  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:19:17.306  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:19:17.306  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:19:17.312  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:19:17.314  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.293 seconds (JVM running for 1486.661)
+2022-12-27 15:19:17.315  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-12-27 15:19:23.998  INFO 74610 --- [Thread-11335] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:19:23.999  INFO 74610 --- [Thread-11335] com.alibaba.druid.pool.DruidDataSource   : {dataSource-37} closing ...
+2022-12-27 15:19:24.000  INFO 74610 --- [Thread-11335] com.alibaba.druid.pool.DruidDataSource   : {dataSource-37} closed
+2022-12-27 15:19:29.077  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Starting Application on zackdeMacBook-Air.local with PID 74610 (/Users/zack/Desktop/qc-spring-boot/target/classes started by zack in /Users/zack/Desktop/qc-spring-boot)
+2022-12-27 15:19:29.078  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : No active profile set, falling back to default profiles: default
+2022-12-27 15:19:29.225  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-12-27 15:19:29.226  INFO 74610 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-12-27 15:19:29.226  INFO 74610 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-12-27 15:19:29.243  INFO 74610 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-12-27 15:19:29.244  INFO 74610 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 162 ms
+2022-12-27 15:19:29.246  INFO 74610 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-12-27 15:19:29.250  INFO 74610 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-38} inited
+2022-12-27 15:19:29.256  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: root-dir = /var/storage
+2022-12-27 15:19:29.257  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: max-size = 102400
+2022-12-27 15:19:29.257  INFO 74610 --- [restartedMain] com.qc.boot.service.UserService          : Load configuration: allowed-types = [jpg, png, gif]
+2022-12-27 15:19:29.323  INFO 74610 --- [restartedMain] c.q.b.service.impl.LocalStorageService   : init local storage with root dir:null
+2022-12-27 15:19:29.338  INFO 74610 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-27 15:19:29.414  INFO 74610 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-12-27 15:19:29.415  INFO 74610 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-27 15:19:29.422  INFO 74610 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-12-27 15:19:29.424  INFO 74610 --- [restartedMain] com.qc.boot.Application                  : Started Application in 5.359 seconds (JVM running for 1498.771)
+2022-12-27 15:19:29.424  INFO 74610 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
