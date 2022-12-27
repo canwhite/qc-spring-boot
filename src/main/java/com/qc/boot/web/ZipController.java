@@ -38,8 +38,11 @@ public class ZipController {
     public Callable<CommonResult> sendZip(@RequestParam("file") MultipartFile file) {
         //返回callable,要看这是不是个异步操作了
         return  ()->{
-            
+            //上传文件
             zipService.upload(file);
+            //执行脚本
+            // zipService.execShell(); 
+
 
             CommonResult result = new CommonResult();
             result.setCode(200);
