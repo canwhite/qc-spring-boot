@@ -1,6 +1,12 @@
 package com.qc.boot.service;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
@@ -54,9 +60,41 @@ public class ZipService {
 
     //修改nginx
     public void changeNginxConfig(){
-        //TODO
+        // Read the Nginx configuration file into memory
+        File configFile = new File("/path/to/nginx.conf");
+        List<String> lines = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(new FileReader(configFile))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lines.add(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        // Find the line where you want to insert the new configuration
+        int lineToInsertAfter = -1;
+        for (int i = 0; i < lines.size(); i++) {
+            if (lines.get(i).startsWith("# My configuration block starts here")) {
+                lineToInsertAfter = i;
+                break;
+            }
+        }
 
+        // Insert the new configuration after the specified line
+        if (lineToInsertAfter >= 0) {
+            lines.add(lineToInsertAfter + 1, "    new_configuration_option value;");
+        }
+
+        // Write the modified contents back to the file
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(configFile))) {
+            for (String line : lines) {
+                writer.write(line);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 
